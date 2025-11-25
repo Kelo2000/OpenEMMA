@@ -71,6 +71,12 @@ You can now install OpenEMMA with a single command using PyPI:
         ```bash
         conda install nvidia/label/cuda-12.4.0::cuda-toolkit
         ```
+
+         Ensure you have cudatoolkit installed. If not, use the following command:
+        ```bash
+        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+        ```
+
         To install the core packages required for OpenEMMA, run the following command:
         ```bash
         pip install -r requirements.txt
@@ -104,8 +110,17 @@ After setting up the environment, you can start using OpenEMMA with the followin
     ```bash
     python main.py \
         --model-path qwen \
-        --dataroot [dir-of-nuscnse-dataset] \
-        --version [version-of-nuscnse-dataset] \
+        --dataroot [dir-of-nuScenes-dataset] \
+        --version v1.0-mini \
+        --method openemma
+    ```
+
+    - Our Custom Code to Generate our dataset Github Repo:
+    ```bash
+    python main_generate_data.py \
+        --model-path qwen \
+        --dataroot /scratch/ltl2113/LightEMMA/v1.0-mini \
+        --version v1.0-mini \
         --method openemma
     ```
 

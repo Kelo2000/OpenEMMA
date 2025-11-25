@@ -323,6 +323,11 @@ if __name__ == '__main__':
         ego_poses = []
         camera_params = []
         curr_sample_token = first_sample_token
+
+        # NEW: track sample tokens and annotations for this scene
+        sample_tokens = []              # index -> sample_token
+        sample_annotations = {}         # sample_token -> list of ann dicts
+
         while True:
             sample = nusc.get('sample', curr_sample_token)
 
@@ -330,6 +335,8 @@ if __name__ == '__main__':
             cam_front_data = nusc.get('sample_data', sample['data']['CAM_FRONT'])
             # nusc.render_sample_data(cam_front_data['token'])
 
+            # NEW: store sample token in order
+            sample_tokens.append(curr_sample_token)
 
             if "gpt" in args.model_path:
                 with open(os.path.join(nusc.dataroot, cam_front_data['filename']), "rb") as image_file:
@@ -343,6 +350,24 @@ if __name__ == '__main__':
 
             # Get the camera parameters of the sample.
             camera_params.append(nusc.get('calibrated_sensor', cam_front_data['calibrated_sensor_token']))
+
+             # NEW: collect per-object annotations for this sample
+            ann_list = []
+            for ann_token in sample['anns']:
+                ann = nusc.get('sample_annotation', ann_token)
+                visibility = nusc.get('visibility', ann['visibility_token'])['description']
+                ann_list.append({
+                    "ann_token": ann_token,
+                    "category_name": ann["category_name"],
+                    "translation": ann["translation"],   # [x, y, z]
+                    "size": ann["size"],                 # [w, l, h]
+                    "rotation": ann["rotation"],         # quaternion [w, x, y, z]
+                    "visibility": visibility,
+                    "num_lidar_pts": ann.get("num_lidar_pts", None),
+                    "num_radar_pts": ann.get("num_radar_pts", None),
+                })
+            sample_annotations[curr_sample_token] = ann_list
+            # END NEW block for annotations
 
             # Advance the pointer.
             if curr_sample_token == last_sample_token:
@@ -436,6 +461,36 @@ if __name__ == '__main__':
             speed_curvature_pred = [[float(v), float(k)] for v, k in coordinates]
             speed_curvature_pred = speed_curvature_pred[:10]
             print(f"Got {len(speed_curvature_pred)} future actions: {speed_curvature_pred}")
+
+             # NEW: save one JSON per *current* sample/frame
+            # current frame index corresponding to curr_image
+            sample_idx = i + OBS_LEN - 1
+            current_sample_token = sample_tokens[sample_idx]
+            current_annots = sample_annotations.get(current_sample_token, [])
+
+            sample_record = {
+                "scene_name": name,
+                # "scene_token": token,
+                "scene_description_text": description,
+                "sample_index": int(sample_idx),
+                # "sample_token": current_sample_token,
+                "image_path": curr_image,
+                "model_path": args.model_path,
+                # "method": args.method,
+                "vlm_scene_description": scene_description,
+                "vlm_object_description": object_description,
+                "vlm_intent_description": updated_intent,
+                # "predicted_speed_curvature": speed_curvature_pred,
+                "annotations": current_annots
+            }
+
+            json_filename = f"{name}_sample_{sample_idx}.json"
+            json_folder = os.path.join(timestamp,"JsonFiles")
+            os.makedirs(json_folder, exist_ok=True)
+            json_path = os.path.join(json_folder, json_filename)
+            with open(json_path, "w") as jf:
+                json.dump(sample_record, jf, indent=2)
+            # END NEW: per-sample JSON dump
 
             # GT
             # OverlayTrajectory(img, fut_ego_traj_world, obs_camera_params[-1], obs_ego_poses[-1], color=(255, 0, 0))
