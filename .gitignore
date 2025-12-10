@@ -20,3 +20,7 @@ env/
 gpt_results/
 llava_results/
 qwen_results/
+/.ipynb_checkpoints
+*.err
+*.out
+*.sbatch

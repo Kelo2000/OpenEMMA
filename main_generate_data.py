@@ -31,6 +31,62 @@ client = OpenAI(api_key="[your-openai-api-key]")
 OBS_LEN = 10
 FUT_LEN = 10
 TTL_LEN = OBS_LEN + FUT_LEN
+from nuscenes.utils.geometry_utils import view_points, BoxVisibility
+from nuscenes.utils.data_classes import Box
+
+def draw_gt_boxes_and_labels(nusc, cam_token, img, line_thickness=1, text_scale=0.4):
+    """
+    Draw GT 3D boxes (projected to 2D) and category labels on img (BGR).
+    cam_token: CAM_FRONT sample_data token.
+    img: np.ndarray (H,W,3) BGR (modified in place).
+    """
+    # Get boxes already transformed into camera frame
+    data_path, boxes, cam_intrinsic = nusc.get_sample_data(
+        cam_token,
+        box_vis_level=BoxVisibility.ANY
+    )
+
+    for box in boxes:
+        # Project 3D corners to image plane
+        corners_3d = box.corners()  # (3, 8)
+        corners_2d = view_points(corners_3d, np.array(cam_intrinsic), normalize=True)  # (3, 8)
+        corners_2d = corners_2d[:2, :].T  # (8, 2)
+
+        # Convert to int and filter points inside image bounds a bit
+        corners_2d = corners_2d.astype(int)
+
+        # Define 3D box edges (pairs of corner indices)
+        edges = [
+            (0, 1), (1, 2), (2, 3), (3, 0),   # bottom face
+            (4, 5), (5, 6), (6, 7), (7, 4),   # top face
+            (0, 4), (1, 5), (2, 6), (3, 7)    # verticals
+        ]
+
+        # Draw thin lines
+        for a, b in edges:
+            x1, y1 = corners_2d[a]
+            x2, y2 = corners_2d[b]
+            cv2.line(img, (x1, y1), (x2, y2), (0, 255, 0), thickness=line_thickness)
+
+        # Draw label (category name) near the top-front corner
+        label = box.name  # category string, e.g., 'vehicle.car'
+        # pick a corner with min y (closest to top of image)
+        top_idx = np.argmin(corners_2d[:, 1])
+        x_text, y_text = corners_2d[top_idx]
+
+        cv2.putText(
+            img,
+            label,
+            (int(x_text), int(y_text) - 5),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            text_scale,
+            (0, 255, 0),
+            thickness=1,
+            lineType=cv2.LINE_AA
+        )
+
+    return img
+
 
 def getMessage(prompt, image=None, args=None):
     if "llama" in args.model_path or "Llama" in args.model_path:
@@ -315,8 +371,8 @@ if __name__ == '__main__':
         name = scene['name']
         description = scene['description']
 
-        if not name in ["scene-0103", "scene-1077"]:
-            continue
+        # if not name in ["scene-0103", "scene-1077"]:
+        #     continue
 
         # Get all image and pose in this scene
         front_camera_images = []
@@ -328,11 +384,14 @@ if __name__ == '__main__':
         sample_tokens = []              # index -> sample_token
         sample_annotations = {}         # sample_token -> list of ann dicts
 
+        cam_front_tokens = []
+
         while True:
             sample = nusc.get('sample', curr_sample_token)
 
             # Get the front camera image of the sample.
             cam_front_data = nusc.get('sample_data', sample['data']['CAM_FRONT'])
+            cam_front_tokens.append(cam_front_data['token'])
             # nusc.render_sample_data(cam_front_data['token'])
 
             # NEW: store sample token in order
@@ -472,7 +531,7 @@ if __name__ == '__main__':
                 "scene_name": name,
                 # "scene_token": token,
                 "scene_description_text": description,
-                "sample_index": int(sample_idx),
+                "sample_index": int(i),
                 # "sample_token": current_sample_token,
                 "image_path": curr_image,
                 "model_path": args.model_path,
@@ -484,12 +543,28 @@ if __name__ == '__main__':
                 "annotations": current_annots
             }
 
-            json_filename = f"{name}_sample_{sample_idx}.json"
+        
+
+            json_filename = f"{name}_sample_{i}.json"
             json_folder = os.path.join(timestamp,"JsonFiles")
             os.makedirs(json_folder, exist_ok=True)
             json_path = os.path.join(json_folder, json_filename)
             with open(json_path, "w") as jf:
                 json.dump(sample_record, jf, indent=2)
+
+            gt_img_out = os.path.join(json_folder, f"{name}_sample_{i}_gt_boxes.png")
+            cam_token = cam_front_tokens[sample_idx]
+            # # nusc.render_sample_data(cam_token, out_path=gt_img_out, verbose=False)
+            # nusc.render_sample_data(
+            #     cam_token,
+            #     with_anns=True,     # <- make sure this is set
+            #     out_path=gt_img_out,
+            #     verbose=False
+            # )
+            # img = draw_gt_boxes_and_labels(nusc, cam_token, img, line_thickness=1, text_scale=0.4)
+            cv2.imwrite(gt_img_out, img)
+
+
             # END NEW: per-sample JSON dump
 
             # GT
@@ -634,4 +709,5 @@ def vlm_inference(text=None, images=None, sys_message=None, processor=None, mode
             )
             return output_text[0]
     # ... 其它模型推理逻辑保持不变 ...
+
 
