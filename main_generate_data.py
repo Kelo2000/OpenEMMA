@@ -415,6 +415,10 @@ if __name__ == '__main__':
             for ann_token in sample['anns']:
                 ann = nusc.get('sample_annotation', ann_token)
                 visibility = nusc.get('visibility', ann['visibility_token'])['description']
+                vis_token = int(ann['visibility_token'])
+                if vis_token != 4:
+                    continue
+                    
                 ann_list.append({
                     "ann_token": ann_token,
                     "category_name": ann["category_name"],
