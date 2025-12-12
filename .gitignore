@@ -24,3 +24,5 @@ qwen_results/
 *.err
 *.out
 *.sbatch
+.env
+/data
