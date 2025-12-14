@@ -1,0 +1,794 @@
+scene,sample_id,json_file,vlm_scene_description,vlm_object_description,gt_object_labels,Human Hallucinations,Human Safety relevance,Human Overall quality
+scene-0061,0,scene-0061_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information available at each 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Frame (0.5 seconds ago):
+ - **Traffic Lights**: The traffic light is green, indicating that vehicles can proceed.
+ - **Other Cars**: There are no other cars directly in front of the vehicle.
+ - **Pedestrians**: There are no pedestrians visible in the immediate vicinity.
+ - **Lane Markings**: The lane markings are clearly visible, indicating the direction of travel.
+ - **Road Conditions**: The road appears to be clear with","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**:
+ - **Location**: The sidewalk on the left side of the image.
+ - **Description**: Pedestrians are walking along the sidewalk. It is important to pay attention to them because they are vulnerable road users and their actions can be unpredictable. You need to be prepared to stop or slow down if they step onto the road or if they are crossing the street.
+ 
+ 2. **Construction Equipment**:
+ - **Location**: The excavator on the left side of the image, near the sidewalk.
+ -","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,2,3
+scene-0061,4,scene-0061_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information available from the camera at a 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Frame (0.5 seconds ago):
+ - **Traffic Lights**: The traffic light is green, indicating that it is safe to proceed.
+ - **Other Cars**: There is a white van in front of the car, moving in the same direction. The van is positioned slightly to the left of the car.
+ - **Pedestrians**: There are several pedestrians on the sidewalk, walking in various directions. Some are closer to the car","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**:
+ - **Location**: On the sidewalk and crossing the street.
+ - **Description**: Pedestrians are walking on the sidewalk and crossing the street. They are important to pay attention to because they can suddenly enter the road, especially when crossing at intersections. This is crucial for safety, as collisions with pedestrians can be severe.
+ 
+ 2. **Construction Workers**:
+ - **Location**: Near the construction barriers.
+ - **Description**: There are construction workers near the construction barriers. They are important to pay attention","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,3,3
+scene-0061,8,scene-0061_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's front view and the time intervals between the images.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - A white van is driving in the same lane as the camera car.
+ - There are no other vehicles directly in front of the camera car.
+ 
+ 3. **Pedestrians:**
+ - There are no pedestrians visible in the image.
+ 
+ 4. **Lane Markings:","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **White Van (Location: Left side of the image, moving towards the camera)**:
+ - **Description**: The white van is moving towards the camera on the left side of the road. It is important to monitor its speed and direction to ensure safe overtaking or merging.
+ - **Why it's important**: Properly anticipating the van's movements can prevent collisions and ensure smooth traffic flow.
+ 
+ 2. **Orange Excavator (Location: Center-right of the image, stationary)**:
+ - **Description**: The excavator is stationary","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.truck']",2,1,2
+scene-0061,12,scene-0061_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - A white van is driving ahead of the car.
+ - A white truck is parked on the right side of the road.
+ - A white car is following the truck on the right side.
+ 
+ 3. **Pedestrians:**
+ - There are no","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **White Van (Location: Middle of the image, slightly to the right)**:
+ - **Description**: The white van is moving in the same direction as you. It is important to monitor its speed and direction to ensure safe overtaking or following.
+ - **Why it's important**: If the van is speeding up or changing lanes, you need to adjust your speed and lane position accordingly to avoid a collision.
+ 
+ 2. **White Truck (Location: Far right of the image)**:
+ - **Description**: The white truck is also","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,3,3
+scene-0061,16,scene-0061_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars or Pedestrians:**
+ - There are no other cars or pedestrians visible in the image.
+ 
+ 3. **Lane Markings:**
+ - The road has clear lane markings, including a solid white line on the left side and a dashed white line on the right side.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Other Vehicles**:
+ - **Location**: On the road ahead and to the sides.
+ - **Description**: These vehicles are moving in the same direction as you. It is important to monitor their speed and direction to ensure safe overtaking or following.
+ 
+ 2. **Pedestrians**:
+ - **Location**: Sidewalks and crosswalks.
+ - **Description**: Pedestrians are walking along the sidewalks and crossing the street. It is crucial to be aware of their presence to avoid collisions and ensure pedestrian safety.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.construction', 'vehicle.motorcycle', 'vehicle.truck']",4,3,4
+scene-0103,0,scene-0103_sample_0.json,"As a autonomous driving labeller, I have access to the front-view camera images of a car taken at a 0.5 second interval over the past 5 seconds. Based on the images, here is a description of the driving scene:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**:
+ - Several cars are parked along the sides of the street.
+ - A few cars are moving in the opposite direction.
+ - There are no cars directly in front of the vehicle.
+ 3. **Pedestrians**: There are no pedestrians visible in the images","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**:
+ - **Location**: On the sidewalks and near the crosswalks.
+ - **Description**: Pedestrians are walking along the sidewalks and crossing the street at the crosswalks. They are important to watch out for because they can suddenly step into the road, especially near intersections and crosswalks.
+ 
+ 2. **Bicyclists**:
+ - **Location**: On the road and near the sidewalks.
+ - **Description**: Bicyclists are riding along the road and near the sidewalks.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.car']",2,2,4
+scene-0103,4,scene-0103_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - The black SUV in front of the car is moving forward.
+ - The silver sedan on the right side of the car is also moving forward.
+ - There are other cars visible in the distance, but their movements are not clearly discernible due to the distance","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Black SUV (Location: Left side of the image, near the center of the road)**:
+ - **Description**: The black SUV is driving in the same lane as you. It is important to monitor its speed and direction to ensure safe overtaking or merging.
+ - **Why it's important**: If the SUV is speeding or changing lanes abruptly, it could pose a risk of collision.
+ 
+ 2. **Silver Sedan (Location: Right side of the image, near the center of the road)**:
+ - **Description**: The","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.car']",4,2,4
+scene-0103,8,scene-0103_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene:
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - A black SUV is directly in front of the car, moving in the same direction.
+ - Several cars are parked along the right side of the street.
+ - A few cars are visible in the distance, moving in the same direction as the black SUV.
+ 
+ 3. **","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Black SUV (Location: Center of the image, moving towards the camera)**:
+ - **Description**: The black SUV is moving towards you and is in your lane. It is important to monitor its speed and direction to ensure safe overtaking or merging.
+ - **Why it's important**: Properly anticipating the actions of the black SUV can prevent potential collisions or accidents.
+ 
+ 2. **Silver sedan (Location: Right side of the image, parked)**:
+ - **Description**: The silver sedan is parked on the right side of the","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.car', 'vehicle.motorcycle']",4,2,3
+scene-0103,12,scene-0103_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information about the camera's position and timing. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images provided.
+ 
+ 2. **Movements of Other Cars**:
+ - A silver car is parked on the left side of the street.
+ - A black car is driving in the opposite direction on the right side of the street.
+ - There are several other cars parked along the street on both sides.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 
+ 4.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Silver Car (Location: Left Lane, Front Position)**:
+ - **Description**: The silver car is in the left lane and is directly in front of you. It is important to monitor its speed and direction as it may change lanes or make a turn.
+ - **Why it's important**: Ensuring you maintain a safe distance and are prepared for any sudden movements or lane changes from this car can prevent collisions.
+ 
+ 2. **Black Car (Location: Right Lane, Front Position)**:
+ - **Description**: The black car is","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'static_object.bicycle_rack', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,2,3
+scene-0103,16,scene-0103_sample_16.json,"As a autonomous driving labeller, I have access to the front-view camera images of a car taken at a 0.5 second interval over the past 5 seconds. Based on the images, here is a description of the driving scene:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**: The images show several cars parked along the sides of the street. Some cars are moving, but there is no indication of any traffic congestion or sudden stops.
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 4. **Lane Markings**:","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**:
+ - **Location**: Sidewalks on both sides of the street.
+ - **Description**: Pedestrians are walking along the sidewalks. It is important to pay attention to them because they may suddenly step onto the road, especially if they are not paying attention to their surroundings.
+ 
+ 2. **Bicyclists**:
+ - **Location**: Sidewalks and bike lanes.
+ - **Description**: Bicyclists are riding along the sidewalks and bike lanes. It is crucial to be","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'static_object.bicycle_rack', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,3
+scene-0553,0,scene-0553_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene Description:
+ 
+ 1. **Traffic Lights:**
+ - The traffic light in the foreground is red, indicating that vehicles must stop.
+ 
+ 2. **Other Vehicles:**
+ - A black pickup truck is moving towards the intersection from the left side of the image.
+ - A gray sedan is positioned at the intersection, waiting for the light to change.
+ 
+ 3. **Pedestrians:**
+ - There are no pedestrians visible in the","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Truck (Location: Left side of the image)**:
+ - **Description**: The truck is moving in the same direction as you, but it is closer to the intersection. It is important to monitor its speed and direction to ensure safe passing and to be prepared for any sudden stops or turns.
+ - **Why it's important**: Trucks can have longer stopping distances and may require more space to maneuver, so it's crucial to maintain a safe distance and be prepared for any changes in its behavior.
+ 
+ 2. **Pedestrians (","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",4,3,3
+scene-0553,4,scene-0553_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene Description:
+ 
+ 1. **Traffic Lights:**
+ - The traffic light in the foreground is red, indicating that vehicles must stop.
+ 
+ 2. **Other Vehicles:**
+ - A white bus is stopped at the intersection, facing the same direction as the viewer.
+ - A black car is also stopped at the intersection, facing the same direction as the viewer.
+ - Another white bus is visible on the left side of the image,","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Black Car (Location: Left side of the image, moving towards the intersection)**:
+ - **Description**: The black car is moving towards the intersection. It is important to monitor its speed and direction to ensure safe navigation through the intersection.
+ - **Why it's important**: The black car might not stop at the red light, so you need to be prepared to react quickly if it continues through the intersection.
+ 
+ 2. **White Bus (Location: Right side of the image, stopped at the intersection)**:
+ - **Description**:","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",4,3,4
+scene-0553,8,scene-0553_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information from the previous 5 seconds of camera footage. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights are currently red, indicating that vehicles must stop at the intersection.
+ 
+ 2. **Other Cars**:
+ - A black car is stopped at the intersection, waiting for the light to change.
+ - Another car is visible in the distance, also stopped at the intersection.
+ 
+ 3. **Pedestrians**:
+ - Two pedestrians are crossing the street. One is pulling a red cart, and the other is walking","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There are two pedestrians crossing the street in the foreground. They are located near the crosswalk, which is important because they are in a vulnerable position and may not be easily visible to drivers. It is crucial to slow down and be prepared to stop if necessary to avoid a collision.
+ 
+ 2. **Vehicles**: There is a black car stopped at the intersection, and another car is approaching from the right side. These vehicles are important to monitor because they may change lanes or make turns, which could affect your driving path.","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",4,4,4
+scene-0553,12,scene-0553_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information from the front-view camera images taken at a 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene:
+ 1. **Traffic Lights:**
+ - The traffic light in the image is red, indicating that vehicles must stop at the intersection.
+ 
+ 2. **Other Cars:**
+ - There is a silver car on the left side of the intersection, moving in the same direction as the viewer.
+ - Another car is visible on the right side of the intersection, also moving in the same direction as the viewer","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians crossing the street**:
+ - **Location**: The crosswalk in the foreground.
+ - **Description**: There are pedestrians crossing the street, including one person pulling a cart. It is important to slow down and be prepared to stop if necessary to avoid a collision.
+ - **Reason**: Pedestrians have the right of way at crosswalks, and failing to yield can result in accidents.
+ 
+ 2. **Vehicles at the intersection**:
+ - **Location**: The intersection in the background.
+ - **","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",4,2,3
+scene-0553,16,scene-0553_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information from the front-view camera images taken at a 0.5 second interval over the past 5 seconds.
+ 
+ ### Current Scene:
+ 1. **Traffic Lights:**
+ - The traffic light in the image is red, indicating that vehicles must stop at the intersection.
+ 
+ 2. **Movements of Other Cars:**
+ - There are no other vehicles visible in the immediate vicinity of the car.
+ 
+ 3. **Pedestrians:**
+ - Several pedestrians are crossing the street at a crosswalk. They are walking in various directions,","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians crossing the street**:
+ - **Location**: The crosswalk in the foreground.
+ - **Description**: Pedestrians are crossing the street at a crosswalk. It is important to slow down and stop if necessary to allow them to cross safely.
+ - **Reason**: Pedestrians have the right of way at crosswalks, and failing to yield can lead to accidents.
+ 
+ 2. **Vehicles stopped at the traffic light**:
+ - **Location**: The intersection with the traffic lights.
+ - **","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",4,2,4
+scene-0655,0,scene-0655_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - The image shows a few cars on the road. The cars are moving in the same direction as the viewer's vehicle.
+ - The cars are maintaining a safe distance from each other, indicating normal traffic flow.
+ 
+ 3. **Pedestrians:**
+ -","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There is a pedestrian walking on the sidewalk on the right side of the image. Pedestrians are important to watch out for because they can suddenly cross the street, especially near crosswalks. This pedestrian is located near the center of the image, walking on the sidewalk.
+ 
+ 2. **Bicyclists**: There are no visible bicyclists in the image, but it's always important to be aware of cyclists, especially in urban areas. Cyclists can be unpredictable and may suddenly change direction. If there were","['human.pedestrian.adult', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",2,1,3
+scene-0655,4,scene-0655_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - The image shows a few cars parked along the sides of the road. There are no moving vehicles in the immediate vicinity of the car.
+ - The car in front of the viewer is stationary, as indicated by the lack of motion blur or change in position.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There is a pedestrian walking on the sidewalk on the right side of the image. Pedestrians are important to watch out for because they can suddenly cross the street, especially near crosswalks. This pedestrian is located near the sidewalk, which is a common area for pedestrians to cross.
+ 
+ 2. **Bicyclists**: There is a cyclist riding on the sidewalk on the right side of the image. Bicyclists are important to watch out for because they can be harder to see and may not always follow the","['human.pedestrian.adult', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.truck']",1,1,3
+scene-0655,8,scene-0655_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - A silver sedan is visible on the left side of the road, moving in the same direction as the viewer.
+ - Another car is visible further down the road, also moving in the same direction.
+ - A bus is visible further down the road, moving","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrian (Location: Crosswalk, near the center of the image)**:
+ - **Description**: A pedestrian is crossing the street at a crosswalk. This is important because pedestrians have the right of way at crosswalks, and failing to yield can result in accidents.
+ 
+ 2. **Bus (Location: Midway down the road, on the right side)**:
+ - **Description**: A bus is traveling on the road. Buses often have larger blind spots and may not see you if you are in their blind spot","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,4,4
+scene-0655,12,scene-0655_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - A silver sedan is driving on the left side of the road, moving in the same direction as the viewer.
+ - A bus is visible on the right side of the road, also moving in the same direction as the viewer.
+ - There are no other","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Silver Car (Location: Left side of the image, near the crosswalk)**:
+ - **Description**: The silver car is positioned near the crosswalk, which is an area where pedestrians are likely to be crossing. It is important to be aware of this car as it may be preparing to stop or yield to pedestrians.
+ - **Why it's important**: Ensuring safety for pedestrians is crucial to avoid accidents and maintain smooth traffic flow.
+ 
+ 2. **Work Truck (Location: Center of the image, behind the silver car)**:","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,3,3
+scene-0655,16,scene-0655_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's history. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars or Pedestrians**: There are no other cars or pedestrians visible in the image.
+ 
+ 3. **Lane Markings**: The road has clear lane markings, including a double yellow line in the center and solid white lines on the edges of the lanes. There are also dashed white lines indicating the edge of the road.
+ 
+ 4. **Other Relevant Information**: The image","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **White Work Truck with Crane (Location: Left side of the road, near the sidewalk)**:
+ - **Description**: The truck is parked on the side of the road, and it appears to be a work truck with a crane attached. It is likely involved in some form of road or utility work.
+ - **Importance**: Be cautious when approaching this vehicle as it may be in the process of performing work that could affect traffic flow or require additional space for maneuvering.
+ 
+ 2. **Bus (Location: Right side of the road","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,2,3
+scene-0757,0,scene-0757_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's history. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic light in the image is showing a red light. This indicates that the vehicle should stop at the intersection.
+ 
+ 2. **Movements of Other Cars**:
+ - There is a white bus in the intersection, positioned in the center of the road. It appears to be stationary, likely waiting for the traffic light to change.
+ - There is a black SUV on the right side of the image, also waiting at the intersection. It is","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Bus (Location: Center of the image, moving towards the viewer)**:
+ - **Description**: The bus is moving in the same direction as you are, and it is relatively large compared to other vehicles. It is important to monitor its speed and direction to ensure safe passing and merging.
+ - **Why it's important**: The bus may require more space to maneuver and may have a longer stopping distance due to its size. It's crucial to maintain a safe distance and be prepared for any sudden braking or lane changes.
+ 
+ 2. **","['movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction']",2,3,4
+scene-0757,4,scene-0757_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene Description:
+ 
+ 1. **Traffic Lights:**
+ - The traffic light in the image is showing a red light. This indicates that the car should stop at the intersection.
+ 
+ 2. **Other Vehicles:**
+ - There is a silver car in front of the autonomous vehicle, which appears to be stopped at the intersection as well.
+ - A double-decker bus is visible in the background, moving away from the intersection.
+ -","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Bus (Location: Center of the image, slightly to the right)**: The bus is a significant road user in the scene. It is important to monitor its movements because it can block your view of the intersection and may require you to stop or yield to it. Buses often have large blind spots, so it's crucial to be aware of their position and direction.
+ 
+ 2. **Pedestrians (Location: Sidewalks and crosswalks)**: Although not explicitly visible in the image, it's important to be aware of","['movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,1,3
+scene-0757,8,scene-0757_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene:
+ 1. **Traffic Lights:**
+ - The traffic light in the image is showing a red light. This indicates that the car should stop at the intersection.
+ 
+ 2. **Other Cars:**
+ - There is a black sedan in front of the car, which appears to be stopped at the intersection as well.
+ - A white bus is visible in the background, moving away from the intersection.
+ 
+ 3. **Pedestrians","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Black sedan (X: 300 Y: 200 Width: 100 Height: 100)**: This car is located in the intersection, directly in front of you. It is important to monitor its movements as it may change lanes or make a turn, potentially affecting your path.
+ 
+ 2. **White bus (X: 350 Y: 150 Width: 150 Height: 150)**: The bus is located on the left side of the intersection","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,3,2
+scene-0757,12,scene-0757_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - The traffic light in the image is showing a red light. This indicates that the vehicle should stop at the intersection.
+ 
+ 2. **Movements of Other Cars:**
+ - A red Coca-Cola van is visible in the image. It appears to be moving forward, possibly preparing to turn or continue straight.
+ - A white truck is also visible in the image. It","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Red Coca-Cola Van (Location: Left side of the image, moving towards the intersection)**:
+ - **Description**: The red Coca-Cola van is moving towards the intersection. It is important to pay attention to this vehicle because it may turn or stop at the intersection, and you need to be prepared to react accordingly.
+ 
+ 2. **White Utility Truck (Location: Right side of the image, stopped at the intersection)**:
+ - **Description**: The white utility truck is stopped at the intersection. It is crucial to be aware of this","['movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,3,3
+scene-0757,16,scene-0757_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Scene Description:
+ 
+ 1. **Traffic Lights:**
+ - The traffic light in the image is showing a red light for the direction the car is facing. This indicates that the car should stop at the intersection.
+ 
+ 2. **Other Vehicles:**
+ - There is a white car in front of the car, which appears to be stationary.
+ - A maroon SUV is also present in the intersection, positioned to the right of the white","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Bicyclist (Location: Right side of the image, near the curb)**:
+ - **Description**: The bicyclist is riding on the right side of the image, near the curb. They are wearing a helmet and appear to be moving at a moderate speed.
+ - **Importance**: Bicyclists are vulnerable road users, and it is crucial to maintain a safe distance from them to avoid collisions. You should be aware of their presence and adjust your speed accordingly to ensure their safety.
+ 
+ 2. **Pedestrians (","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,2,4
+scene-0796,0,scene-0796_sample_0.json,"As a autonomous driving labeller, I am observing the following details from the front-view camera images:
+ 
+ 1. **Traffic Lights**: The traffic lights are not visible in the current image, but they are likely present further down the road.
+ 
+ 2. **Movements of Other Cars**:
+ - There are several cars visible on the road. Some are moving in the same direction as the viewer, while others are moving in the opposite direction.
+ - The cars are maintaining a safe distance from each other, adhering to traffic rules.
+ 
+ 3. **Pedestrians**:
+ - There are no pedestrians visible in the current image.
+ 
+ 4","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Motorcycle rider**:
+ - **Location**: On the left side of the image, near the center of the road.
+ - **Description**: The motorcycle rider is moving in the same direction as the car. It is important to pay attention to this rider because motorcycles can be harder to see and are more vulnerable to accidents. You should maintain a safe distance and be prepared to react quickly if the motorcycle changes lanes or makes a sudden move.
+ 
+ 2. **Pedestrian**:
+ - **Location**: On the left side of the","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,2,3
+scene-0796,4,scene-0796_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information from the previous 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights are not visible in the provided images, so I cannot describe their status.
+ 
+ 2. **Movements of Other Cars**:
+ - There are several cars on the road. The cars are moving in the same direction as the viewer's car.
+ - The cars are maintaining a safe distance from each other, indicating normal traffic flow.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 
+ 4. **","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There is a pedestrian on the sidewalk to the left of the image, near the ""SIT@Dover"" sign. Pedestrians are important to watch out for as they can suddenly cross the road, especially near intersections.
+ 
+ 2. **Other Vehicles**: There are several vehicles on the road, including a silver SUV on the right side of the image and a few cars in the distance. It's important to monitor these vehicles to ensure safe lane changes and to anticipate their movements.
+ 
+ 3. **Traffic Lights**: Although","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,3,3
+scene-0796,8,scene-0796_sample_8.json,"As a autonomous driving labeller, I am observing the following details from the front-view camera images:
+ 
+ 1. **Traffic Lights**: The traffic lights are visible in the distance, but the specific colors are not discernible from the image.
+ 
+ 2. **Movements of Other Cars**:
+ - There are several cars on the road, including a red car ahead, a white car to the left, and a black car to the right.
+ - The red car ahead is moving in the same direction as the viewer's vehicle.
+ - The white car to the left is also moving in the same direction.
+ - The black car to","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: Although not visible in the image, it is important to be aware of pedestrians, especially near the ""End of School Zone"" sign. Pedestrians are often present near schools and may be crossing the street or waiting to cross. Being vigilant for pedestrians can help prevent accidents and ensure the safety of all road users.
+ 
+ 2. **Other Vehicles**: The image shows several vehicles on the road. It is important to monitor the traffic flow and maintain a safe distance from other vehicles. This includes paying attention to the speed of the","['human.pedestrian.adult', 'vehicle.car', 'vehicle.motorcycle']",3,1,3
+scene-0796,12,scene-0796_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights are visible in the distance and are currently showing green. This indicates that it is safe to proceed.
+ 
+ 2. **Movements of Other Cars**:
+ - A red car is driving in the right lane, moving forward.
+ - Several other cars are visible in the distance, also moving forward.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 
+ 4. **Lane Markings**:
+ - The road has multiple lanes, with clear lane","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Red Car (Location: Right Lane, Midway on the Road)**:
+ - **Description**: The red car is in the right lane and appears to be moving at a moderate speed. It is important to monitor its position and speed to ensure safe overtaking or merging.
+ - **Why it's important**: Ensuring safe overtaking or merging is crucial to avoid collisions and maintain traffic flow.
+ 
+ 2. **Black Car (Location: Right Lane, Far Right on the Road)**:
+ - **Description**: The black car is also","['vehicle.car', 'vehicle.motorcycle']",4,3,4
+scene-0796,16,scene-0796_sample_16.json,"As a autonomous driving labeller, I have access to the front-view camera images of a car taken at a 0.5 second interval over the past 5 seconds. Based on the images, here is a description of the driving scene:
+ 
+ 1. **Traffic Lights**: The traffic light in the image is showing a green light, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**: There are a few cars visible in the distance. One car is approaching from the opposite direction, and another car is further ahead on the same road.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 
+ 4","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: Although not visible in the image, it is important to be aware of pedestrians, especially near crosswalks and sidewalks. Pedestrians can suddenly step onto the road, and it is crucial to be prepared to stop or slow down.
+ 
+ 2. **Bicyclists**: There are no visible bicyclists in the image, but it is important to be aware of cyclists, especially in urban areas. Cyclists can be difficult to see, and they may take unexpected turns or stop suddenly.
+ 
+ 3. **Other vehicles",['vehicle.car'],2,2,3
+scene-0916,0,scene-0916_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information about the camera's position and timing. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images provided.
+ 
+ 2. **Movements of Other Cars**: There are no other cars visible in the images provided.
+ 
+ 3. **Pedestrians**: There is one pedestrian visible in the images. The pedestrian is walking on the sidewalk near the parked motorcycles.
+ 
+ 4. **Lane Markings**: The lane markings are visible on the road. There are yellow lines on the road, indicating the boundaries of the","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrian (X: 350, Y: 200)**: The pedestrian is located near the center of the image, walking on the sidewalk. Pedestrians are important to watch out for as they can suddenly cross the road, especially if they are not paying attention to their surroundings.
+ 
+ 2. **Motorcycle (X: 100, Y: 250)**: The motorcycle is parked on the left side of the image. Motorcycles can be difficult to see, especially if they are","['human.pedestrian.adult', 'static_object.bicycle_rack', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,4
+scene-0916,4,scene-0916_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's history. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the image.
+ 2. **Movements of Other Cars**: There are several cars parked in the parking lot. The cars are stationary, and there is no indication of any movement.
+ 3. **Pedestrians**: There are no pedestrians visible in the image.
+ 4. **Lane Markings**: The parking lot has clear lane markings, indicating designated parking spaces. The lane markings are visible and well-defined.
+ 
+ Based on","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Motorcycle (Location: Left side of the image, near the center)**
+ - **Description:** The motorcycle is parked on the side of the road, close to the parking area. It is important to note its presence because it could potentially move into the driving lane, especially if the driver is not paying attention.
+ 
+ 2. **Pedestrians (Location: Background, near the trees)**
+ - **Description:** There are no pedestrians visible in the image, but it is always important to be aware of potential pedestrians, especially in","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,2,3
+scene-0916,8,scene-0916_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's view and time intervals.
+ 
+ ### Description of the Driving Scene:
+ 
+ 1. **Traffic Lights:**
+ - There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars:**
+ - The image shows a row of parked cars along the side of the road. The cars are stationary, and there is no indication of any movement from them.
+ - The road appears to be a two-way street with a clear lane marking for the direction of travel.
+ 
+ 3. **Pedestrians:","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: Although not visible in the image, it is important to be aware of pedestrians, especially near crosswalks and sidewalks. Pedestrians can suddenly step onto the road, and it is crucial to be prepared to stop or yield.
+ 
+ 2. **Other Vehicles**: The image shows several vehicles parked along the curb. Be cautious of these vehicles as they may suddenly pull out onto the road, especially if they are not paying attention to their surroundings. It is important to maintain a safe distance and be prepared to react to any sudden","['human.pedestrian.adult', 'static_object.bicycle_rack', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,2,2
+scene-0916,12,scene-0916_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided front-view camera images taken at a 0.5-second interval over the past 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**:
+ - The car in front of you is moving forward.
+ - The car on the right side of the image is also moving forward.
+ - The car on the left side of the image is stationary.
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 4.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: Although not visible in the image, it is important to be aware of pedestrians, especially near crosswalks or areas where people might be crossing the street. Pedestrians can be unpredictable and may enter the road unexpectedly.
+ 
+ 2. **Bicyclists**: There are no visible bicyclists in the image, but it is crucial to be aware of cyclists, especially in areas with bike lanes or where cyclists might be riding. Cyclists can be vulnerable and may not always be visible, especially if they are riding on","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",2,1,3
+scene-0916,16,scene-0916_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's history. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars**:
+ - A white truck is parked on the left side of the road, occupying the leftmost lane.
+ - Several cars are parked along the right side of the road, including a blue car with the word ""Comfort"" on it.
+ - There are no other cars in motion on the road.
+ 
+ 3. **Pedestrians**: There are","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **White Truck (Location: Left side of the image, near the curb)**:
+ - **Description**: The white truck is parked on the side of the road. It is important to pay attention to this truck because it may be blocking the lane, and you need to be aware of its presence to avoid any potential collisions or obstructions.
+ 
+ 2. **Blue Car (Location: Right side of the image, near the curb)**:
+ - **Description**: The blue car is parked on the side of the road. It is important to","['vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,3,3
+scene-1077,0,scene-1077_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**: The car in front of you is moving forward, as indicated by the position of its taillights and the distance between you and the car. Other cars are also visible in the distance, moving in the same direction.
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 4. **Lane Markings**: The lane markings are clearly visible, indicating the lanes of the","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Vehicles ahead**:
+ - **Location**: Directly ahead and slightly to the left.
+ - **Description**: There are several vehicles ahead, including a car directly in front of you. These vehicles are important because they can change lanes, accelerate, or brake suddenly, which could affect your driving.
+ 
+ 2. **Vehicles on the right**:
+ - **Location**: Directly to the right and slightly ahead.
+ - **Description**: There are vehicles on the right side of the road, including a car that is slightly ahead",['vehicle.car'],4,4,3
+scene-1077,4,scene-1077_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Frame (0.5 seconds ago):
+ - **Traffic Lights:** Not visible in the image.
+ - **Other Cars:**
+ - A car is directly ahead, maintaining a steady distance.
+ - Several cars are visible in the distance, following the same lane.
+ - No pedestrians are visible in the image.
+ - **Lane Markings:** The lane markings are clearly visible, indicating a two-lane road with a solid yellow line on","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Car ahead (Location: Center of the image)**:
+ - **Description**: The car ahead is driving in the same lane as you. It is important to maintain a safe distance from this car to avoid potential collisions and to react to its movements, such as braking or changing lanes.
+ 
+ 2. **Cars on the right (Location: Right side of the image)**:
+ - **Description**: There are cars driving in the same direction on the right side of the road. These cars can change lanes or merge into your lane, so it",['vehicle.car'],4,4,3
+scene-1077,8,scene-1077_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**: The car in front of you is moving forward, as indicated by the position of the taillights and the distance between the vehicles. There are other cars visible in the distance, but they are not directly in your path.
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 4. **Lane Markings**: The lane markings are clearly visible. The road is divided","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Car ahead (X: 400, Y: 200, Width: 50, Height: 50)**: This car is directly ahead of you. It is important to maintain a safe distance and be prepared to react to any sudden braking or lane changes from this vehicle.
+ 
+ 2. **Truck on the right (X: 600, Y: 150, Width: 100, Height: 100)**: The truck is on the right side of","['movable_object.barrier', 'vehicle.car']",2,2,3
+scene-1077,12,scene-1077_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**: The car in front is moving forward, as indicated by the position of its taillights and the distance between the vehicles. There are other cars visible in the distance, but their exact movements cannot be determined from the images.
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 4. **Lane Markings**: The lane markings are visible on the road. The car","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Car ahead**:
+ - **Location**: Directly ahead on the road.
+ - **Description**: The car is maintaining a safe distance from you. It is important to monitor its speed and direction to ensure safe following and to react to any sudden changes in its behavior.
+ 
+ 2. **Vehicles on the right**:
+ - **Location**: To the right of your vehicle.
+ - **Description**: These vehicles are traveling in the same direction as you. It is crucial to be aware of their speed and any potential lane changes,","['movable_object.barrier', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,4,3
+scene-1077,16,scene-1077_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information about the camera's 0.5-second interval over the past 5 seconds.
+ 
+ ### Description:
+ 
+ 1. **Traffic Lights:**
+ - The image does not show any traffic lights in the immediate vicinity of the car.
+ 
+ 2. **Other Cars:**
+ - There are several cars visible on the road ahead. The car directly in front of the viewer is a red vehicle, and there are other cars following it at a safe distance.
+ - The cars ahead are maintaining a steady speed, and there is no indication of any","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Red car ahead**:
+ - **Location**: Directly ahead of your vehicle.
+ - **Description**: The red car is driving in the same lane as you. It is important to monitor its speed and direction to ensure safe following distance and to be prepared for any sudden braking or lane changes.
+ 
+ 2. **White car on the right**:
+ - **Location**: To the right of your vehicle.
+ - **Description**: The white car is driving in the same lane as you. It is important to keep an eye on its","['movable_object.barrier', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,4,3
+scene-1094,0,scene-1094_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information from the previous 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic light in the image is showing a green light, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**:
+ - A white van is visible on the left side of the image, moving in the same direction as the car.
+ - Another car is visible on the right side of the image, also moving in the same direction.
+ 
+ 3. **Pedestrians**:
+ - There are several pedestrians visible on the","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians with umbrellas**:
+ - **Location**: Near the crosswalk, in the middle of the road.
+ - **Description**: These pedestrians are crossing the street, likely in the rain. It is important to slow down and be prepared to stop if necessary to avoid hitting them.
+ - **Why it is important**: Pedestrians, especially those holding umbrellas, can be harder to see in low light conditions. Being cautious can prevent accidents and ensure the safety of all road users.
+ 
+ 2. **Motorcyclists","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.car']",2,2,2
+scene-1094,4,scene-1094_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images taken at a 0.5-second interval over the past 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights are not visible in the images provided. Therefore, I cannot describe their current state or color.
+ 
+ 2. **Movements of Other Cars**:
+ - In the first image, there are several cars visible on the road. The cars are moving in different directions, indicating a busy traffic situation.
+ - In subsequent images, the positions of the cars change, suggesting that they are in motion. The","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: Although not clearly visible in the image, it is important to be aware of pedestrians, especially near crosswalks and sidewalks. Pedestrians can suddenly step onto the road, and it is crucial to be prepared to stop or slow down to avoid collisions.
+ 
+ 2. **Other Vehicles**: Pay attention to the vehicles around you, including cars, trucks, and motorcycles. Be aware of their speed, direction, and any potential lane changes. This is important to avoid collisions and maintain a safe distance from other vehicles.
+ 
+ 3.","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car']",2,1,2
+scene-1094,8,scene-1094_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images taken at a 0.5-second interval over the past 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**:
+ - The car in front of you is moving forward.
+ - There are several cars on the right side of the road, some of which are moving forward and others are stationary.
+ - The cars on the right side of the road are maintaining a safe distance from each other.
+ 3. **Pedestrians","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Vehicles in the same lane**:
+ - **Location**: Directly in front of your vehicle and to the sides.
+ - **Description**: These vehicles are in the same lane as you. It is important to monitor their speed and direction to ensure safe lane changes and maintain a safe following distance.
+ 
+ 2. **Vehicles in the opposite lane**:
+ - **Location**: Opposite side of the road.
+ - **Description**: These vehicles are coming towards you. It is crucial to be aware of their speed and any potential","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.car']",3,2,2
+scene-1094,12,scene-1094_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided image and the information from the previous 5 seconds of camera footage. Here is the description:
+ 
+ 1. **Traffic Lights**: The image shows a night-time scene with streetlights illuminating the road. There are no visible traffic lights in the image.
+ 
+ 2. **Movements of Other Cars**: The car in front of you is moving forward, as indicated by the position of its taillights and the distance between your vehicle and the car ahead. There are other cars visible in the distance, but they are not directly relevant to the immediate driving scenario.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Vehicles ahead**:
+ - **Location**: Directly ahead and slightly to the right.
+ - **Description**: There is a silver car directly ahead of you. It is important to monitor its speed and direction to ensure safe following distance and to react to any sudden braking or lane changes.
+ - **Why it's important**: Keeping a safe distance from the vehicle ahead helps prevent collisions and allows you to react to any sudden changes in traffic conditions.
+ 
+ 2. **Vehicles on the right**:
+ - **Location**: Directly","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,2,3
+scene-1094,16,scene-1094_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: There are no visible traffic lights in the images.
+ 2. **Movements of Other Cars**: There are several cars visible on the road. Some are moving in the same direction as the viewer, while others are moving in the opposite direction. The cars are maintaining a safe distance from each other.
+ 3. **Pedestrians**: There are a few pedestrians visible on the sidewalk. They appear to be walking and are maintaining a safe distance from the road.
+ 4. **Lane Markings**:","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**:
+ - **Location**: On the left side of the road, near the sidewalk.
+ - **Description**: There are pedestrians walking on the sidewalk. It is important to pay attention to them because they are vulnerable road users and may suddenly step onto the road or cross the street.
+ 
+ 2. **Other Vehicles**:
+ - **Location**: On the right side of the road, following the car.
+ - **Description**: There are other vehicles following the car. It is important to pay attention to them because they","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,3,3
+scene-1100,0,scene-1100_sample_0.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images and the information available from the camera at a 0.5-second interval over the past 5 seconds.
+ 
+ ### Current Frame (0.5 seconds ago):
+ - **Traffic Lights**: The traffic light in the image is green, indicating that it is safe to proceed.
+ - **Other Cars**: There are several cars visible on the road. Some are moving in the same direction as the viewer, while others are moving in the opposite direction. The cars are maintaining a safe distance from each other.
+ - **Pedestrians**: There are no pedestrians visible","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians near the pedestrian crossing**: There are pedestrians near the pedestrian crossing on the right side of the image. They are likely waiting to cross the street. It is important to slow down and be prepared to stop if they decide to cross.
+ 
+ 2. **Vehicles on the road**: There are several vehicles on the road, including cars and a bus. You should maintain a safe distance from these vehicles and be prepared to react to their movements, such as changing lanes or stopping.
+ 
+ 3. **Traffic lights**: The traffic lights are visible","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,3,3
+scene-1100,4,scene-1100_sample_4.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images taken at a 0.5-second interval over the past 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights in the image are showing green, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**:
+ - In the first image, there are several cars visible on the road. Some are moving in the same direction as the viewer, while others are moving in the opposite direction.
+ - In subsequent images, the positions of the cars change slightly, indicating that they are in motion.
+ 
+ 3","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There are pedestrians visible on the sidewalk to the right of the image. They are walking near the edge of the sidewalk, which is important to you because you need to be prepared to stop or slow down if they step onto the road or if they are crossing the street.
+ 
+ 2. **Other Vehicles**: There are several vehicles visible on the road ahead. You should be aware of their speed and direction to anticipate any potential changes in traffic flow or sudden braking.
+ 
+ 3. **Traffic Lights**: The traffic lights are visible in the","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,3,3
+scene-1100,8,scene-1100_sample_8.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic light in the image is showing a green light, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**: There are several cars visible in the image. Some are moving in the same direction as the car, while others are moving in the opposite direction. The cars are maintaining a safe distance from each other.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the image.
+ 
+ 4. **Lane Markings**: The lane markings are clearly visible. The car","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians near the bus stop**: There are pedestrians standing near the bus stop on the right side of the image. They are likely waiting for the bus or walking along the sidewalk. It is important to be aware of their presence to avoid any potential collisions or accidents.
+ 
+ 2. **Vehicles on the road**: There are several vehicles visible on the road, including cars and possibly a bus. You should be aware of their positions and movements to ensure safe navigation and avoid any potential collisions.
+ 
+ 3. **Traffic lights**: The traffic lights are","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,3,3
+scene-1100,12,scene-1100_sample_12.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic light in the image is showing a green light, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**: There are no other cars visible in the immediate vicinity of the vehicle.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the image.
+ 
+ 4. **Lane Markings**: The lane markings are clearly visible, indicating the correct lane for the vehicle to follow. The lane markings include a solid white line on the left and a dashed white line on the","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Pedestrians**: There are pedestrians visible near the crosswalk and on the sidewalk. They are located on the right side of the image, near the blue sign. Pedestrians are important to watch out for because they can suddenly enter the road, especially at crosswalks.
+ 
+ 2. **Other Vehicles**: There are other vehicles visible on the road, including a black car on the right side of the image. You should be aware of their position and speed to avoid collisions. The black car is located near the right edge of the image","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",2,3,4
+scene-1100,16,scene-1100_sample_16.json,"As an autonomous driving labeller, I would describe the driving scene based on the provided images taken at a 0.5-second interval over the past 5 seconds. Here is the description:
+ 
+ 1. **Traffic Lights**: The traffic lights in the images are green, indicating that it is safe to proceed.
+ 
+ 2. **Other Cars**: There are no other cars visible in the images. The road appears to be clear of traffic.
+ 
+ 3. **Pedestrians**: There are no pedestrians visible in the images.
+ 
+ 4. **Lane Markings**: The lane markings are clearly visible. The car is driving in the left lane, which is","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Motorcycle rider**:
+ - **Location**: On the left side of the image, near the center of the road.
+ - **Description**: The motorcycle rider is moving in the same direction as the car. It is important to pay attention to this rider because motorcycles can be harder to see and are more vulnerable to accidents. You should maintain a safe distance and be prepared to react quickly if the rider makes a sudden move.
+ 
+ 2. **Pedestrian**:
+ - **Location**: On the right side of the image, near","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",4,2,3
