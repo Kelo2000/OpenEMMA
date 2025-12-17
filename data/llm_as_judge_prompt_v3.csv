@@ -1,0 +1,1372 @@
+scene,sample_id,json_file,vlm_scene_description,vlm_object_description,gt_object_labels,Lukelo Hallucinations,Lukelo Safety relevance,Lukelo Overall quality,Duoaa Hallucinations,Duoaa Safety relevance,Duoaa Overall quality,LLM Hallucinations,LLM Safety relevance,LLM Overall quality,LLM Analysis,LLM Raw output
+scene-0061,0,scene-0061_sample_0.json,"In the image, the car is at an intersection with a traffic light showing a green signal. The car is positioned in the right lane, and there is a white arrow indicating a right turn. There are other vehicles in the background, including cars and a bus, suggesting a busy urban environment. Pedestrians are visible on the sidewalks, and there are construction barriers indicating ongoing work nearby. The car is approaching the intersection, and based on the green light and the right turn arrow, it is safe to proceed with the turn.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: There is a pedestrian visible on the right side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. Traffic Light: There is a traffic light visible in the image, located on the right side of the road. It is important to observe traffic lights to ensure compliance with traffic rules and to anticipate changes in the traffic flow.
+ 
+ 3. Bus: There is a bus visible in the image, located on the right side of the road, behind the car. It is important to be aware of larger vehicles like buses, as they may have blind spots and require more space when changing lanes or making turns.
+ 
+ These road users are important to pay attention to because they are part of the traffic environment and their actions can affect the safety and smooth flow of traffic.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,3,4,4,4,4,3,4,"- Hallucinations: None
+- Safety relevance: Pedestrians and vehicles are covered, but construction workers are not explicitly mentioned.
+- Overall quality: The description is clear and provides relevant information about the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: Pedestrians and vehicles are covered, but construction workers are not explicitly mentioned.
+- Overall quality: The description is clear and provides relevant information about the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4"
+scene-0061,4,scene-0061_sample_4.json,"Based on the image sequence provided, here's a concise description of the driving scene:
+ 
+ - The car is at an intersection with a green traffic light, indicating it has the right of way.
+ - There are several other vehicles in the vicinity, including cars and trucks, suggesting a busy urban area.
+ - Pedestrians are visible on the sidewalks, indicating a pedestrian-friendly environment.
+ - The lane markings are clear, and the car is in the correct lane for its direction of travel.
+ - There are no visible obstacles or hazards that would require immediate attention.
+ 
+ Please note that this description is based on the visible elements in the images and does not include any inferred or predicted actions of other road users.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrians: There are several pedestrians visible in the image. One is located on the right side of the image, near the crosswalk, and appears to be waiting to cross the street. Another pedestrian is on the left side of the image, closer to the camera, and seems to be walking along the sidewalk. It's important to be aware of pedestrians because they are vulnerable road users and need to be given the right of way when crossing the street.
+ 
+ 2. Traffic lights: There are traffic lights visible in the image. One is on the right side of the image, and another is on the left side. These traffic lights control the flow of traffic and indicate when it's safe to proceed or when it's necessary to stop. It's crucial to obey traffic signals to ensure safe and smooth traffic flow.
+ 
+ 3. Other vehicles: There are other vehicles visible in the image, including a truck and a car. These vehicles are important to be aware of because they share the road and can potentially change lanes or make turns. It's important to maintain a safe distance and be prepared for their actions.
+ 
+ These road users are important to be aware of because they are part of the dynamic environment that an autonomous vehicle must navigate safely.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,4,4,4,4,4,4,4,"- Hallucinations: None (except for traffic lights, which are not penalized)
+- Safety relevance: Focuses on present safety-relevant actors (vehicles and pedestrians)
+- Overall quality: Clear and informative description of the scene
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None (except for traffic lights, which are not penalized)
+- Safety relevance: Focuses on present safety-relevant actors (vehicles and pedestrians)
+- Overall quality: Clear and informative description of the scene
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4"
+scene-0061,8,scene-0061_sample_8.json,"In the image, the car is on a road with a construction zone ahead. There is a large orange excavator on the right side of the road, indicating ongoing construction work. The road is marked with lane markings, and there is a yield sign on the right side of the road. The car is currently in a lane that is not blocked by the construction zone. There are no other cars or pedestrians visible in the immediate vicinity of the car. The traffic light is not visible in the image. The car is in motion, driving towards the construction zone, and it appears to be following the lane markings and yield sign.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Construction Equipment: There is a large construction vehicle, specifically a crane, visible in the image. It is located on the right side of the road, just ahead of the car. This equipment is important because it may be involved in construction work that could affect the flow of traffic or require the car to slow down or change lanes.
+ 
+ 2. Traffic Signs: There are several traffic signs visible in the image. One of the signs is a ""Give Way"" sign, which is located on the right side of the road, just ahead of the car. This sign is important because it indicates that the car must yield to other traffic when approaching the intersection.
+ 
+ 3. Pedestrians: There are no pedestrians visible in the image, but it is important to be aware of potential pedestrians crossing the road or walking along the sidewalk. The car should be prepared to stop or slow down as needed to ensure the safety of pedestrians.
+ 
+ These road users are important to the car's navigation because they can influence the car's speed, direction, and overall driving experience. The autonomous driving system must be able to recognize and respond to these road users to ensure safe and efficient driving.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.truck']",4,3,4,2,4,4,2,2,4,"- Hallucinations: The VLM object description mentions a ""crane"" which is not present in the ground-truth annotations, and also mentions ""bicyclists"" which are not present in the ground-truth annotations. Additionally, the VLM scene description mentions a ""yield sign"" which is present in the ground-truth annotations, but the description does not explicitly state its presence.
+- Safety relevance: The VLM object description focuses on construction equipment and traffic signs, which are not safety-critical actors present in the ground-truth annotations. It also mentions pedestrians, which are present in the ground-truth annotations, but does not emphasize them.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions a ""crane"" which is not present in the ground-truth annotations, and also mentions ""bicyclists"" which are not present in the ground-truth annotations. Additionally, the VLM scene description mentions a ""yield sign"" which is present in the ground-truth annotations, but the description does not explicitly state its presence.
+- Safety relevance: The VLM object description focuses on construction equipment and traffic signs, which are not safety-critical actors present in the ground-truth annotations. It also mentions pedestrians, which are present in the ground-truth annotations, but does not emphasize them.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 4"
+scene-0061,12,scene-0061_sample_12.json,"In the image, the car is on a road with a lane marking on the right side. There are no visible traffic lights in the immediate vicinity. Other vehicles include a white truck and a white car, both parked or stationary. There are no pedestrians visible in the image. The road appears to be in an urban area, with buildings and trees in the background. The car is moving forward, and there are no immediate obstacles or hazards visible. The road appears to be clear and safe for driving.","In the image provided, as an autonomous driving labeller, I would pay attention to the following road users:
+ 
+ 1. **White Truck**: The white truck is located to the right of the vehicle, slightly behind it. It appears to be in motion, driving on the same road as the vehicle. It is important to be aware of the truck's position and speed because it is a larger vehicle that could obstruct the view of other road users or require more space to maneuver.
+ 
+ 2. **White Car**: The white car is located to the right of the vehicle, in front of the truck. It is also in motion, driving on the same road. The car's position and speed are important to be aware of because it could potentially change lanes or make a turn, which would require the vehicle to adjust its speed or direction accordingly.
+ 
+ 3. **Pedestrians**: There are pedestrians visible on the sidewalk to the left of the vehicle. They are walking along the sidewalk, and while they are not directly in the vehicle's path, they are still road users that the vehicle should be aware of. It is important to be cautious around pedestrians, especially when making turns or stopping, to ensure their safety.
+ 
+ These road users are important to be aware of because they are all part of the traffic environment and could potentially interact with the vehicle in various ways. The vehicle should maintain a safe distance from the truck and car, and be prepared to yield to pedestrians when necessary.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,4,3,4,4,3,4,4,"- Hallucinations: The VLM object description mentions pedestrians on the sidewalk, which are present in the ground-truth annotations. However, it also mentions a white truck and a white car as being in motion, which is not explicitly stated in the ground-truth annotations. Additionally, it advises being cautious around pedestrians, which is a minor hallucination.
+- Safety relevance: The VLM object description focuses on the white truck and white car as safety-critical actors, which are present in the ground-truth annotations. It also mentions pedestrians, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions pedestrians on the sidewalk, which are present in the ground-truth annotations. However, it also mentions a white truck and a white car as being in motion, which is not explicitly stated in the ground-truth annotations. Additionally, it advises being cautious around pedestrians, which is a minor hallucination.
+- Safety relevance: The VLM object description focuses on the white truck and white car as safety-critical actors, which are present in the ground-truth annotations. It also mentions pedestrians, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-0061,16,scene-0061_sample_16.json,"In the image, the car is driving on a road with a white center line. There are orange traffic cones placed on the right side of the road, indicating a lane closure or a designated area for a specific purpose. The car is approaching a traffic light, which is currently not visible in the image. There are no other cars or pedestrians visible in the immediate vicinity of the car. The road appears to be in an urban area, as suggested by the presence of a building in the background. The sky is overcast, suggesting it might be a cloudy day. The car is moving at a moderate speed, as indicated by the position of the cones and the driver's line of sight. The road is clear, and there are no immediate signs of traffic or pedestrians.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the sidewalk to the left of the vehicle. It is important to be aware of pedestrians as they may cross the street unexpectedly, and it is crucial to yield to them when required.
+ 
+ 2. Traffic Light: The traffic light is located at the top left corner of the image. It is important to observe traffic lights to ensure compliance with traffic rules and to anticipate changes in the traffic flow.
+ 
+ 3. Other Vehicles: There are other vehicles in the scene, including a truck and a car. It is important to be aware of other vehicles on the road to maintain a safe distance, anticipate their movements, and be prepared for any sudden changes in their trajectory.
+ 
+ These road users are important to consider for safe and responsible driving.","['human.pedestrian.adult', 'human.pedestrian.construction_worker', 'movable_object.barrier', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.car', 'vehicle.construction', 'vehicle.motorcycle', 'vehicle.truck']",3,4,4,4,4,3,3,4,4,"- Hallucinations: The VLM scene description mentions a traffic light, but it is not present in the ground-truth annotations. The VLM object description mentions pedestrians, traffic lights, and other vehicles, but does not mention the construction worker or the movable objects (barrier and traffic cone).
+- Safety relevance: The VLM object description focuses on pedestrians, traffic lights, and other vehicles, which are all present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of orange traffic cones and the car's moderate speed.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description mentions a traffic light, but it is not present in the ground-truth annotations. The VLM object description mentions pedestrians, traffic lights, and other vehicles, but does not mention the construction worker or the movable objects (barrier and traffic cone).
+- Safety relevance: The VLM object description focuses on pedestrians, traffic lights, and other vehicles, which are all present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of orange traffic cones and the car's moderate speed.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-0103,0,scene-0103_sample_0.json,"In the image, the car is at an intersection in a city street. The traffic light is not visible in the frame, but based on the position of the car and the presence of other vehicles, it can be inferred that the car is likely waiting for the traffic light to change. There are multiple lanes marked with white lines, indicating a multi-lane road. The car is in the middle lane, and there are other vehicles in the adjacent lanes, suggesting that the car is in a busy area with moderate traffic. There are no pedestrians visible in the image. The road appears to be in good condition, and the weather seems to be clear.","In the image provided, as an autonomous driving labeller, I would pay attention to the following road users:
+ 
+ 1. **Pedestrian on the right side of the road** - The pedestrian is located on the right side of the road, near the curb. It is important to be aware of pedestrians as they are vulnerable road users and have the right of way in many jurisdictions. You should be prepared to yield to the pedestrian if they are crossing the road or if they are about to enter the road from the sidewalk.
+ 
+ 2. **Vehicle in the center lane** - There is a vehicle in the center lane of the road. It is important to be aware of other vehicles on the road, especially those in the same lane as your vehicle, as they may change lanes or make turns. You should maintain a safe following distance and be prepared to react to their actions.
+ 
+ 3. **Vehicle in the right lane** - There is a vehicle in the right lane of the road. It is important to be aware of vehicles in adjacent lanes as they may change lanes or make turns. You should maintain a safe following distance and be prepared to react to their actions.
+ 
+ These road users are important to consider because they are part of the traffic environment and their actions can affect the safety of your vehicle and the passengers on board. As an autonomous driving system, you should be programmed to anticipate the actions of these road users and respond accordingly to ensure safe navigation through the city streets.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.car']",3,4,3,3,4,4,2,3,4,"- Hallucinations: The VLM scene description mentions ""other vehicles in the adjacent lanes"", which is supported by the ground-truth annotations. However, the VLM object description mentions ""pedestrian on the right side of the road"", which is not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on vehicles in the center and right lanes, which are present in the ground-truth annotations. However, it does not mention the pedestrian, which is also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description mentions ""other vehicles in the adjacent lanes"", which is supported by the ground-truth annotations. However, the VLM object description mentions ""pedestrian on the right side of the road"", which is not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on vehicles in the center and right lanes, which are present in the ground-truth annotations. However, it does not mention the pedestrian, which is also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-0103,4,scene-0103_sample_4.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is at a standstill, likely waiting for a traffic light to change.
+ - There are multiple traffic lights visible in the image, but their current state is not clear.
+ - Other cars are parked along the sides of the street, and there is a mix of stationary and moving vehicles in the lanes ahead.
+ - There are no pedestrians visible in the immediate vicinity of the car.
+ - The lane markings are clear and visible, indicating that the car is in the correct lane.
+ 
+ Please note that this description is based on the information available in the image and does not include any inferred or predicted actions of other vehicles or pedestrians.","Based on the image provided, here are two road users that you should pay attention to:
+ 
+ 1. **Vehicle in the Left Lane**: This is a car that is in the left lane of the street. It is important to be aware of this vehicle because it is in your blind spot and could potentially change lanes or make a turn without signaling. You should keep a safe distance from this vehicle and be prepared to react if it changes its position.
+ 
+ 2. **Pedestrian on the Sidewalk**: There is a pedestrian walking on the sidewalk. While they are not directly in your path, it is important to be aware of their presence because they may cross the street at any time, especially at intersections. Always be prepared to yield to pedestrians when required by traffic laws.
+ 
+ 3. **Vehicle in the Right Lane**: This is a car that is in the right lane of the street. It is important to be aware of this vehicle because it is in your blind spot and could potentially change lanes or make a turn without signaling. You should keep a safe distance from this vehicle and be prepared to react if it changes its position.
+ 
+ These road users are important to be aware of because they are in close proximity to your vehicle and their actions could affect your driving. Always maintain a safe distance from other vehicles and be prepared to react to the actions of pedestrians.","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.car']",3,4,4,4,4,4,3,4,3,"- Hallucinations: The VLM scene description mentions traffic lights, but they are not supported by the ground-truth annotations. The VLM object description mentions a pedestrian on the sidewalk, which is supported by the ground-truth annotations. However, it also mentions vehicles in the left and right lanes, which are not explicitly mentioned in the ground-truth annotations, but are plausible given the context.
+- Safety relevance: The VLM object description focuses on vehicles and pedestrians, which are the safety-critical actors present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, but it could be more detailed and specific.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description mentions traffic lights, but they are not supported by the ground-truth annotations. The VLM object description mentions a pedestrian on the sidewalk, which is supported by the ground-truth annotations. However, it also mentions vehicles in the left and right lanes, which are not explicitly mentioned in the ground-truth annotations, but are plausible given the context.
+- Safety relevance: The VLM object description focuses on vehicles and pedestrians, which are the safety-critical actors present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, but it could be more detailed and specific.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 3"
+scene-0103,8,scene-0103_sample_8.json,"In the image, the car is at an intersection with a traffic light visible in the upper right corner. The traffic light is currently red, indicating that the car should stop. There are other cars in the vicinity, some of which are parked along the side of the street, while others appear to be in motion. There are no pedestrians visible in the image. The lane markings are clear, and the car is positioned in the correct lane for the direction it is traveling. The road is wide and appears to be a multi-lane street. The weather seems to be overcast, and the lighting suggests it might be late afternoon or early evening.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian on the sidewalk**: The pedestrian is located on the right side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. **Vehicle in the opposite lane**: There is a vehicle in the opposite lane, which is located on the left side of the image. It is important to be aware of vehicles in the opposite lane when making turns or changing lanes, as they may not be visible in the front-view camera's field of view.
+ 
+ 3. **Traffic light**: The traffic light is located on the right side of the image, near the pedestrian. It is important to be aware of traffic lights to ensure compliance with traffic rules and to anticipate changes in the traffic flow.
+ 
+ These road users are important to be aware of because they are part of the traffic environment and can affect the vehicle's movement. The autonomous driving system should be programmed to recognize and respond to these road users to ensure safe and efficient navigation through the city streets.","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'vehicle.car', 'vehicle.motorcycle']",3,4,4,3,4,4,2,4,4,"- Hallucinations: The VLM object description mentions a pedestrian on the sidewalk, which is supported by the ground-truth annotations. However, it also mentions a vehicle in the opposite lane, which is not present in the ground-truth annotations. Additionally, it mentions a traffic light, which is not present in the ground-truth annotations but is mentioned in the VLM scene description.
+- Safety relevance: The VLM object description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions a pedestrian on the sidewalk, which is supported by the ground-truth annotations. However, it also mentions a vehicle in the opposite lane, which is not present in the ground-truth annotations. Additionally, it mentions a traffic light, which is not present in the ground-truth annotations but is mentioned in the VLM scene description.
+- Safety relevance: The VLM object description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0103,12,scene-0103_sample_12.json,"In the image, the car is driving on a city street with tall buildings on both sides. The road appears to be a one-way street with a double yellow line indicating no parking or stopping at any time. There are no visible traffic lights in the immediate vicinity of the car.
+ 
+ Other vehicles are present in the scene, including a car directly ahead of the camera car, which is maintaining a safe distance. There are also several pedestrians visible on the sidewalks, and a few cyclists are present as well.
+ 
+ The car is approaching an intersection where there is a red fire hydrant on the right side of the road. The road is clear of obstructions, and the lane markings are visible, indicating a standard urban road layout.
+ 
+ The car is currently in motion, and there are no immediate signs of traffic congestion or any other hazardous conditions that would require a change in driving behavior. The car's speed appears to be within the speed limit for the area, and there are no other vehicles or pedestrians in close proximity that would require immediate attention or maneuvering.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. The vehicle in the center lane, which appears to be a small black car. It is important to maintain a safe distance from this vehicle, as it is in the same lane and could potentially change lanes or make a turn.
+ 
+ 2. The white van on the right side of the image. It is important to be aware of this vehicle because it is larger and might have blind spots. The van's size and position could also affect the visibility of other road users, so it's crucial to be cautious when maneuvering around it.
+ 
+ 3. The pedestrians on the sidewalk. While they are not directly in the path of the vehicle, they could potentially step onto the road or cross it unexpectedly. It's important to be aware of their presence and to obey traffic signals and signs to ensure their safety.
+ 
+ 4. The traffic light in the upper right corner of the image. It is important to pay attention to the traffic light signals to ensure compliance with traffic rules and to avoid accidents.
+ 
+ 5. The parked cars on the side of the street. These vehicles could obstruct the view of other road users or pedestrians, so it's important to be cautious when approaching or passing them.
+ 
+ 6. The fire hydrant on the sidewalk. While it is not a direct road user, it is important to be aware of it to avoid any potential damage to the vehicle or obstruction of the road.
+ 
+ 7. The bicyclist on the left side of the image. It is important to be aware of the bicyclist's presence and to give them enough space when passing them, as they might make sudden turns or maneuvers.
+ 
+ 8. The truck in the background. While it is not directly in the path of the vehicle, it is important to be aware of its presence and to maintain a safe distance from it, as it could potentially make a turn or change lanes.
+ 
+ 9. The parked cars on the left side of the image. These vehicles could obstruct the view of other road users or pedestrians, so it's crucial to be cautious when approaching or passing them.
+ 
+ 10. The pedestrians on the sidewalk. While they are not directly in the path of the vehicle, they could potentially step onto the road or cross it unexpectedly. It's important to be aware of their presence and to obey traffic signals and signs to ensure their safety.","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'movable_object.trafficcone', 'static_object.bicycle_rack', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,4,3,4,4,2,4,4,"- Hallucinations: The traffic light in the upper right corner of the image, the parked cars on the side of the street, the fire hydrant on the sidewalk, the truck in the background, and the parked cars on the left side of the image are not present in the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors from GT, including vehicles and pedestrians.
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The traffic light in the upper right corner of the image, the parked cars on the side of the street, the fire hydrant on the sidewalk, the truck in the background, and the parked cars on the left side of the image are not present in the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors from GT, including vehicles and pedestrians.
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0103,16,scene-0103_sample_16.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ - The car is on a city street, driving away from the camera.
+ - The street is lined with parked cars on both sides.
+ - There are no visible traffic lights in the image.
+ - The lane markings are clear and visible.
+ - There are no other cars or pedestrians in the immediate vicinity that can be seen in the image.
+ - The street appears to be quiet with no immediate traffic or pedestrian activity.
+ 
+ Please note that this description is based on the available information in the image and does not include any assumptions or interpretations beyond what is visible.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian on the sidewalk**: There is a pedestrian walking on the sidewalk near the crosswalk. It is important to be aware of pedestrians, especially near crosswalks, as they may cross the street unexpectedly.
+ 
+ 2. **Cars parked on the side of the road**: There are several cars parked along the side of the road. These vehicles may be entering or exiting parking spots, so it's important to be cautious and maintain a safe distance.
+ 
+ 3. **Vehicles in the distance**: There are other vehicles in the distance, including cars and trucks. It's important to be aware of their positions and movements to anticipate any potential changes in traffic flow or to react to any sudden movements.
+ 
+ 4. **Traffic lights and signs**: There are traffic lights and signs in the scene that provide information about traffic rules and regulations. It's crucial to follow these signals and signs to ensure safe and legal driving.
+ 
+ 5. **Buildings and infrastructure**: The presence of buildings and infrastructure indicates that the road is in an urban area. This means that there may be pedestrians, cyclists, and other vehicles sharing the road, so it's important to be vigilant and prepared for any unexpected situations.
+ 
+ 6. **Other vehicles in motion**: There are other vehicles in motion, including cars and trucks. It's important to maintain a safe distance and be aware of their positions and movements to anticipate any potential changes in traffic flow or to react to any sudden movements.
+ 
+ 7. **Parking meters**: There are parking meters along the side of the road. These indicate that there is a designated parking area, and it's important to be aware of these areas to avoid any potential parking violations or obstructions.
+ 
+ 8. **Parked vehicles**: There are parked vehicles along the side of the road. It's important to be aware of these vehicles to avoid any potential parking violations or obstructions.
+ 
+ 9. **Crosswalk**: There is a crosswalk in the scene, which indicates that pedestrians may be crossing the street. It's important to be aware of pedestrians and to yield to them when required.
+ 
+ 10. **Traffic signs**: There are traffic signs in the scene, such as a stop sign. It's important to be aware of these signs and to follow them to ensure safe and legal driving.
+ 
+ 11. **Pedestrians waiting to cross**: There are pedestrians waiting to cross the street. It's important to be aware of their presence and to yield to them when required.
+ 
+ 12. **Cars in motion**: There are cars in motion, including cars and trucks. It's important to be aware of their positions and movements to anticipate any potential changes in traffic flow or to react to any sudden movements.
+ 
+ 13. **Pedestrians walking on the sidewalk**: There are pedestrians walking on the sidewalk. It's important to be aware of their presence and to yield to them when required.
+ 
+ 14. **Cars parked in front of buildings**: There are cars parked in front of buildings. It's important to be aware of these vehicles to avoid any potential parking violations or obstructions.
+ 
+ 15. **Truck driving on the road**: There is a truck driving on the road. It's important to be aware of its size and potential blind spots to ensure safe driving.
+ 
+ 16. **Cars driving on the road**: There are cars driving on the road. It's important to be aware of their positions and movements to anticipate any potential changes in traffic flow or to react to any sudden movements.
+ 
+ 17. **Pedestrians walking on the sidewalk**: There are pedestrians walking on the sidewalk. It's important to be aware of their presence and to yield to them when required.
+ 
+ 18. **Cars parked on the side of the road**: There are cars parked along the side of the road. These vehicles may be entering or exiting parking spots, so it's important to be cautious and maintain a safe distance.
+ 
+ 19. **Vehicles in the distance**: There are other vehicles in the distance, including cars and trucks. It's important to be aware of their positions and movements to anticipate any potential changes in traffic flow or to react to any sudden movements.
+ 
+ 20. **Buildings and infrastructure**: The presence of buildings and infrastructure indicates that the road is in an urban area. This means that there may be pedestrians, cyclists, and other vehicles sharing the road, so it's important to be vigilant and prepared for any unexpected situations.","['human.pedestrian.adult', 'human.pedestrian.child', 'movable_object.pushable_pullable', 'static_object.bicycle_rack', 'vehicle.bicycle', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,4,1,4,4,2,4,4,"- Hallucinations: The VLM object description mentions traffic lights, which are not present in the ground-truth annotations. Additionally, it mentions bicyclists, pedestrians waiting to cross, pedestrians walking on the sidewalk, and cars parked in front of buildings, which are not explicitly mentioned in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on present safety-critical actors from GT, including pedestrians and vehicles.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the driving scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions traffic lights, which are not present in the ground-truth annotations. Additionally, it mentions bicyclists, pedestrians waiting to cross, pedestrians walking on the sidewalk, and cars parked in front of buildings, which are not explicitly mentioned in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on present safety-critical actors from GT, including pedestrians and vehicles.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the driving scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0553,0,scene-0553_sample_0.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ - The traffic light is red, indicating that the car should stop.
+ - There is a pedestrian crossing the street, which suggests that the car should yield to the pedestrian.
+ - The car is currently stopped at the red light.
+ - There are no other cars visible in the immediate vicinity.
+ - The lane markings are clear, indicating that the car is in the correct lane.
+ - The road appears to be in a city environment, with buildings and infrastructure visible in the background.
+ 
+ Please note that this description is based on the visible elements in the image and does not include any inferred or predicted actions.","In the image provided, as an autonomous driving labeller, I would pay attention to the following road users:
+ 
+ 1. **Pedestrian**: The pedestrian is located on the right side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. **Traffic Light**: The traffic light is located at the top right corner of the image. It is important to pay attention to traffic lights as they regulate the flow of traffic and indicate when it is safe to proceed or when you need to stop.
+ 
+ 3. **Other Vehicles**: There are other vehicles in the image, including a truck and a car. They are located on the left side of the image. It is important to be aware of other vehicles on the road to maintain safe distances and avoid collisions.
+ 
+ 4. **Traffic Signs**: There are traffic signs in the image, including a ""No Turns"" sign. These signs provide important information to drivers and pedestrians, and it is crucial to follow them to ensure road safety.
+ 
+ 5. **Buildings and Infrastructure**: The image shows a city street with buildings and infrastructure. It is important to be aware of the road conditions, road markings, and any potential obstacles or hazards that may be present due to the urban environment.
+ 
+ 6. **Potential Obstacles**: There may be other potential obstacles or hazards not visible in the image, such as cyclists, animals, or debris on the road. It is important to be vigilant and prepared for unexpected situations.
+ 
+ 7. **Other Road Users**: There may be other road users not visible in the image, such as cyclists or motorcyclists. It is important to be aware of the possibility of other road users and to be prepared to react accordingly.
+ 
+ 8. **Traffic Signal Timing**: The traffic light is currently red. It is important to obey traffic signals to ensure safety and avoid accidents.
+ 
+ 9. **Other Traffic Lights**: There are other traffic lights in the image, which are important for understanding the traffic flow and ensuring safe navigation through the intersection.
+ 
+ 10. **Pedestrian Crossing**: The pedestrian is near the crosswalk, which is an area where pedestrians are likely to cross the street. It is important to be prepared to stop or yield to pedestrians in such areas.","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",3,3,4,4,4,4,4,4,4,"- Hallucinations: None
+- Safety relevance: The description focuses on the pedestrian and the traffic light, which are present in the ground-truth annotations.
+- Overall quality: The description is concise and easy to understand, providing relevant information about the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on the pedestrian and the traffic light, which are present in the ground-truth annotations.
+- Overall quality: The description is concise and easy to understand, providing relevant information about the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4"
+scene-0553,4,scene-0553_sample_4.json,"In the image, the car is at an intersection with a traffic light showing a red signal. The car is stopped and waiting for the light to change. There are other vehicles in the scene, including a bus and a truck, which are also stopped at the intersection. The lane markings are visible, indicating that the car is in the correct lane for the direction it is facing. There are no pedestrians visible in this frame. The road appears to be in an urban area with buildings in the background. The sky is overcast, suggesting it might be a cloudy day.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian**: The pedestrian is located on the left side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. **Traffic Light**: The traffic light is located on the right side of the image, above the white van. It is important to observe traffic lights to ensure compliance with traffic rules and to anticipate changes in the traffic flow.
+ 
+ 3. **Van**: The white van is located on the right side of the image, behind the traffic light. It is important to be aware of other vehicles, especially larger ones like vans, as they may have blind spots and require more space when maneuvering.
+ 
+ These road users are important to consider because they are all part of the traffic environment and can affect the vehicle's movement. The pedestrian is a potential hazard that requires caution, the traffic light regulates the flow of traffic, and the van may require extra attention due to its size and potential blind spots.","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",3,4,3,3,4,4,2,1,4,"- Hallucinations: The pedestrian is not explicitly mentioned in the ground-truth annotations, but it is mentioned in the VLM object description as a potential hazard. Additionally, the description mentions a van, which is not explicitly mentioned in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the pedestrian, traffic light, and van, which are not present in the ground-truth annotations. It does not mention the vehicles and pedestrians that are actually present in the scene.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 1
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The pedestrian is not explicitly mentioned in the ground-truth annotations, but it is mentioned in the VLM object description as a potential hazard. Additionally, the description mentions a van, which is not explicitly mentioned in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the pedestrian, traffic light, and van, which are not present in the ground-truth annotations. It does not mention the vehicles and pedestrians that are actually present in the scene.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 1
+Overall quality: 4"
+scene-0553,8,scene-0553_sample_8.json,"In the image, the car is at an intersection with a green traffic light, indicating that it is safe to proceed. There are no other cars visible in the immediate vicinity, and no pedestrians are crossing the street at this moment. The lane markings are clear, and the car is positioned in the correct lane for the direction it is heading. The road appears to be clear, and there are no visible obstacles or hazards. The car is stationary, likely waiting for the traffic light to change or for any pedestrians to cross.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrians**: There are two pedestrians crossing the street in the crosswalk. It is important to be aware of them because they have the right of way and are likely to be moving at a slower pace than the vehicle. Ensuring they are safely across the street is crucial for avoiding accidents.
+ 
+ 2. **Motorcyclist**: There is a motorcyclist on the right side of the road, just ahead of the vehicle. Motorcyclists are smaller and less visible than other vehicles, so it's important to maintain a safe distance and be aware of their presence to avoid collisions.
+ 
+ 3. **Traffic Signal**: There is a traffic signal ahead of the vehicle. It is important to pay attention to the signal to ensure the vehicle obeys the traffic rules and stops or proceeds as required.
+ 
+ These road users are important to be aware of because they are part of the traffic environment and their actions can significantly impact the safety of the vehicle and its passengers.","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",3,4,3,3,3,4,2,2,4,"- Hallucinations: The VLM object description mentions a motorcyclist, which is not present in the ground-truth annotations. Additionally, it does not explicitly mention the vehicle, which is present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on pedestrians, which are present in the ground-truth annotations, but does not mention the vehicle, which is also present.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions a motorcyclist, which is not present in the ground-truth annotations. Additionally, it does not explicitly mention the vehicle, which is present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on pedestrians, which are present in the ground-truth annotations, but does not mention the vehicle, which is also present.
+- Overall quality: The VLM scene description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 4"
+scene-0553,12,scene-0553_sample_12.json,"In the image, the car is at an intersection with a traffic light showing a red signal. There are pedestrians crossing the street in front of the car, and the car is stopped, waiting for the pedestrians to clear the crosswalk. The lane markings indicate that the car is in the correct lane for the direction it is traveling. There are other cars and traffic lights in the background, suggesting a busy urban environment. The sky is overcast, and the overall scene is typical of a city street during the day.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrians**: There are three pedestrians crossing the street at the crosswalk. It is important to yield to pedestrians and ensure they are safely across before proceeding.
+ 
+ 2. **Vehicles**: There are several vehicles in the scene, including cars and a truck. They are located on the road and at the intersection. It is important to be aware of their positions and movements to avoid collisions and maintain safe distances.
+ 
+ 3. **Traffic Signals**: There are multiple traffic lights in the scene. They are located at various points along the road. It is crucial to follow the signals to ensure compliance with traffic rules and maintain safety.
+ 
+ 4. **Other Pedestrians**: There are other pedestrians visible on the sidewalks. It is important to be aware of their presence and maintain a safe speed to avoid accidents.
+ 
+ 5. **Cyclists**: There is a cyclist visible on the right side of the image. It is important to be cautious around cyclists, giving them enough space and being prepared to yield when necessary.
+ 
+ 6. **Traffic Signs**: There are traffic signs visible in the scene, such as a ""No Turn"" sign. It is important to be aware of these signs and follow them to avoid violations and maintain safety.
+ 
+ 7. **Construction Work**: There appears to be construction work in the background. It is important to be cautious around construction zones, as there may be changes in traffic patterns or temporary obstacles.
+ 
+ 8. **Other Vehicles**: There are other vehicles visible in the scene, including cars and a truck. It is important to be aware of their positions and movements to avoid collisions and maintain safe distances.
+ 
+ 9. **Parked Vehicles**: There are parked vehicles on the side of the road. It is important to be aware of these vehicles to avoid accidents when parking or maneuvering around them.
+ 
+ 10. **Traffic Signal Timing**: The traffic lights are currently red for the vehicles on the road. It is important to obey the traffic signals and wait for the appropriate signal to proceed safely.
+ 
+ Remember, as an autonomous vehicle, it is crucial to follow all traffic rules and prioritize safety at all times.","['human.pedestrian.adult', 'movable_object.barrier', 'movable_object.pushable_pullable', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.trailer', 'vehicle.truck']",3,3,3,4,4,4,2,4,4,"- Hallucinations: Construction work, traffic signs, traffic signal timing, parked vehicles, other vehicles, other pedestrians, and traffic signal timing are not supported by the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors, including pedestrians and vehicles.
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: Construction work, traffic signs, traffic signal timing, parked vehicles, other vehicles, other pedestrians, and traffic signal timing are not supported by the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors, including pedestrians and vehicles.
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0655,0,scene-0655_sample_0.json,"Based on the image sequence provided, here's a concise description of the driving scene:
+ 
+ - The car is on a two-lane street.
+ - The lane markings are clearly visible.
+ - There are no pedestrians visible in the images.
+ - The traffic lights are not visible in the images.
+ - The car is in the right lane of the street.
+ - There are other cars parked on the side of the street.
+ - The car is stationary, as indicated by the lack of motion blur in the images.
+ - The street appears to be in an urban area, as suggested by the presence of buildings and the layout of the road.
+ 
+ Please note that without additional context or a more detailed analysis of the images, this description is based solely on the visible elements in the provided sequence.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle to the left**: This is a white van that is parked on the side of the road. It is important to be aware of it because it is in the vehicle's blind spot, and if it were to move without proper signaling, it could pose a risk to the vehicle's safety.
+ 
+ 2. **Vehicle to the right**: This is a black SUV that is parked on the side of the road. It is important to be aware of it because it is in the vehicle's blind spot, and if it were to move without proper signaling, it could pose a risk to the vehicle's safety.
+ 
+ 3. **Pedestrian**: There is a pedestrian visible on the far right side of the image. It is important to be aware of pedestrians because they are vulnerable road users and may unexpectedly step onto the road.
+ 
+ These road users are important to pay attention to because they are in close proximity to the vehicle and could potentially enter the vehicle's path if they are not cautious.","['human.pedestrian.adult', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,4,4,3,4,4,3,4,4,"- Hallucinations: The VLM scene description does not mention any unsupported object categories. The VLM object description mentions a pedestrian, which is supported by the ground-truth annotations. However, it also mentions vehicles in the blind spot, which is not explicitly supported by the ground-truth annotations, but can be inferred.
+- Safety relevance: The VLM object description focuses on present safety-critical actors (pedestrian) and mentions vehicles in the blind spot, which is relevant to safety.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description does not mention any unsupported object categories. The VLM object description mentions a pedestrian, which is supported by the ground-truth annotations. However, it also mentions vehicles in the blind spot, which is not explicitly supported by the ground-truth annotations, but can be inferred.
+- Safety relevance: The VLM object description focuses on present safety-critical actors (pedestrian) and mentions vehicles in the blind spot, which is relevant to safety.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-0655,4,scene-0655_sample_4.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is on a city street.
+ - The lane markings are visible and the car is within its lane.
+ - There are no pedestrians visible in the image.
+ - There are several other cars parked on the side of the street.
+ - The traffic light is not visible in the image.
+ - The car is stationary, as indicated by the lack of motion blur in the image.
+ - The surrounding buildings suggest an urban environment.
+ - The sky is clear, indicating good weather conditions.
+ 
+ Please note that this description is based on the available information and the actual driving conditions may vary.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian**: The pedestrian is located on the right side of the image, near the crosswalk. It is important to be aware of pedestrians as they may be crossing the street or walking along the sidewalk. As a driver, you need to be prepared to yield to pedestrians when required by traffic laws.
+ 
+ 2. **Cyclist**: The cyclist is located on the left side of the image, near the bike lane. Cyclists are an important part of the traffic environment and should be treated with the same respect as other vehicles. They may be sharing the road or using designated bike lanes. It's crucial to maintain a safe distance and be aware of their presence to avoid collisions.
+ 
+ 3. **Vehicles**: There are several vehicles in the scene, including cars and a bus. These vehicles are located throughout the image, both ahead and behind the vehicle from which the image is taken. It's important to be aware of the positions and movements of these vehicles to navigate the road safely and avoid potential accidents.
+ 
+ Remember, as an autonomous driving system, you should always prioritize safety and adhere to traffic rules and regulations.","['human.pedestrian.adult', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.truck']",2,2,4,2,4,4,3,3,4,"- Hallucinations: The VLM object description mentions a pedestrian and a cyclist, which are supported by the ground-truth annotations. However, it also mentions vehicles, which are also present in the ground-truth annotations but are not explicitly highlighted as safety-relevant actors. Additionally, the VLM scene description mentions a bus, which is not explicitly mentioned in the VLM object description.
+- Safety relevance: The VLM object description focuses on pedestrians and vehicles, which are present in the ground-truth annotations. However, it does not explicitly highlight the bus as a safety-relevant actor.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene. The VLM object description is also clear and provides specific information about the objects present in the scene.
+
+Hallucinations: 3
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions a pedestrian and a cyclist, which are supported by the ground-truth annotations. However, it also mentions vehicles, which are also present in the ground-truth annotations but are not explicitly highlighted as safety-relevant actors. Additionally, the VLM scene description mentions a bus, which is not explicitly mentioned in the VLM object description.
+- Safety relevance: The VLM object description focuses on pedestrians and vehicles, which are present in the ground-truth annotations. However, it does not explicitly highlight the bus as a safety-relevant actor.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene. The VLM object description is also clear and provides specific information about the objects present in the scene.
+
+Hallucinations: 3
+Safety relevance: 3
+Overall quality: 4"
+scene-0655,8,scene-0655_sample_8.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is at a stoplight, waiting for the signal to change.
+ - There are no other cars or pedestrians visible in the immediate vicinity.
+ - The lane markings are clear and visible.
+ - The road appears to be in a city or urban area, as indicated by the buildings and the presence of a sidewalk.
+ - The weather seems to be clear and sunny, with no visible obstructions.
+ - The car is stationary, as indicated by the stoplight and the absence of any movement in the image.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the left side of the street, near the crosswalk. They are walking towards the crosswalk, which indicates that they might be planning to cross the street. It is important to be aware of pedestrians, especially near crosswalks, as they have the right of way and you must yield to them.
+ 
+ 2. Bus: The bus is located on the right side of the street, driving away from the camera's perspective. It is important to be aware of larger vehicles like buses, as they might have blind spots and require more space when changing lanes or making turns.
+ 
+ 3. Cars: There are several cars in the scene, both parked and moving. They are located on the right side of the street, behind the bus. It is important to be aware of other vehicles, as they may change lanes, make turns, or stop suddenly. Maintaining a safe distance and being prepared to react to their actions is crucial for safe driving.
+ 
+ Please note that this analysis is based on the static image provided and does not account for the dynamic nature of the scene, such as the movement of the vehicles or the pedestrian's actions. In a real-world scenario, an autonomous vehicle would need to process these factors in real-time to make safe driving decisions.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,4,4,4,4,4,4,4,4,"- Hallucinations: The description mentions traffic lights, but this is supported by the ground-truth annotations. There is no mention of unsupported objects or events.
+- Safety relevance: The description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The description is concise and provides a clear overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The description mentions traffic lights, but this is supported by the ground-truth annotations. There is no mention of unsupported objects or events.
+- Safety relevance: The description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The description is concise and provides a clear overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4"
+scene-0655,12,scene-0655_sample_12.json,"In the image, the car is at an intersection with a pedestrian crossing. The traffic light is not visible in the image, but based on the position of the car and the pedestrian, it can be inferred that the car is likely waiting for the pedestrian to cross or for the traffic light to change. There are no other cars or pedestrians visible in the image, and the lane markings are clear, indicating that the car is in the correct lane. The surrounding area appears to be a typical urban street with buildings on both sides, and the road is clear of any obstructions.","Based on the image provided, here are two road users that you should pay attention to:
+ 
+ 1. **Pedestrian**: The pedestrian is located on the right side of the image, near the crosswalk. It appears to be waiting to cross the street. It is important to be aware of pedestrians, especially near crosswalks, as they have the right of way and you must yield to them.
+ 
+ 2. **Bus**: The bus is located on the right side of the image, behind the pedestrian. It is important to be aware of buses, as they may make frequent stops and have larger blind spots than other vehicles. Keeping a safe distance and being prepared for sudden stops is crucial.
+ 
+ 3. **Cars**: There are several cars visible in the image, both parked and moving. It is important to be aware of the traffic flow and maintain a safe distance from other vehicles to avoid collisions.
+ 
+ Remember to always follow traffic rules and regulations, and to be prepared for any changes in the road environment.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,4,4,3,4,4,4,3,4,"- Hallucinations: None
+- Safety relevance: Pedestrian and bus are covered, but cars are not specifically highlighted
+- Overall quality: The description is clear and provides relevant information about the scene
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: Pedestrian and bus are covered, but cars are not specifically highlighted
+- Overall quality: The description is clear and provides relevant information about the scene
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4"
+scene-0655,16,scene-0655_sample_16.json,"The image shows a city street with a bus driving in the right lane. There are no visible traffic lights in the image. The road is marked with double yellow lines, indicating no parking or stopping at any time. The lane markings are clear and visible. There are no other cars or pedestrians visible in the image. The street appears to be relatively quiet with no immediate traffic or obstacles. The car is driving in the left lane, maintaining a safe distance from the bus.","In the image provided, as an autonomous driving labeller, I would pay attention to the following road users:
+ 
+ 1. **Pedestrian on the sidewalk**: Located on the left side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. **Bus on the road**: Located in the center of the image, driving towards the camera. It is important to maintain a safe distance from the bus, as it is a larger vehicle that may have blind spots.
+ 
+ 3. **Cars parked on the side of the road**: Located on the right side of the image, near the curb. It is important to be cautious when passing parked cars, as there may be pedestrians entering or exiting the vehicles, or drivers opening car doors.
+ 
+ These road users are important to be aware of because they can affect the vehicle's trajectory and require appropriate driving behavior to ensure safety.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.bendy', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,4,3,3,4,3,2,3,4,"- Hallucinations: The description mentions ""no visible traffic lights in the image"", which is supported by the ground-truth annotations. However, it also mentions ""cars parked on the side of the road"" which is not present in the ground-truth annotations.
+- Safety relevance: The description focuses on the bus and the car, which are present in the ground-truth annotations, but also mentions pedestrians on the sidewalk, which is also present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The description mentions ""no visible traffic lights in the image"", which is supported by the ground-truth annotations. However, it also mentions ""cars parked on the side of the road"" which is not present in the ground-truth annotations.
+- Safety relevance: The description focuses on the bus and the car, which are present in the ground-truth annotations, but also mentions pedestrians on the sidewalk, which is also present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-0757,0,scene-0757_sample_0.json,"In the image, the car is at a traffic light that is currently red. The vehicle is stationary, waiting for the light to change. There is a bus in the right lane, which appears to be turning right at the intersection. The lane markings are visible, indicating that the car is in the left lane. There are no pedestrians visible in the image. The surrounding buildings suggest an urban environment. The sky is overcast, indicating cloudy weather conditions.","In the driving scene, you should pay attention to the following road users:
+ 
+ 1. The bus (located in the center of the image) - The bus is a large vehicle that is turning right at the intersection. It is important to be aware of its size and turning intentions to avoid any potential collisions.
+ 
+ 2. The pedestrian (located on the left side of the image) - The pedestrian is crossing the street at the crosswalk. It is important to be aware of pedestrians and yield to them when required, as they have the right of way at crosswalks.
+ 
+ 3. The traffic light (located on the right side of the image) - The traffic light is currently red, indicating that you should stop if it is safe to do so. It is important to obey traffic signals to ensure safe and orderly traffic flow.
+ 
+ These road users are important to you because they are all part of the traffic environment and their actions can affect your driving decisions. By being aware of their presence and actions, you can navigate the intersection safely and efficiently.","['movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction']",2,2,4,3,3,4,2,2,3,"- Hallucinations: The pedestrian, the traffic light
+- Safety relevance: The description focuses on the bus and the vehicle, but misses the pedestrian
+- Overall quality: The description is clear and provides relevant information about the scene
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: The pedestrian, the traffic light
+- Safety relevance: The description focuses on the bus and the vehicle, but misses the pedestrian
+- Overall quality: The description is clear and provides relevant information about the scene
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 3"
+scene-0757,4,scene-0757_sample_4.json,"In the image, the car is approaching an intersection with a traffic light visible. The traffic light is currently red, indicating that the car should stop. There is a bus in the right lane ahead of the car, and the car is in the left lane. The lane markings are clear, and there are no visible pedestrians or other vehicles in the immediate vicinity. The road appears to be in an urban area, and the weather seems to be overcast.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the right side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. Traffic Light: The traffic light is located on the right side of the image, just ahead of the pedestrian. It is important to observe traffic lights to ensure compliance with traffic regulations and to anticipate changes in the traffic signal.
+ 
+ 3. Bus: The bus is located on the left side of the image, behind the car. It is important to be aware of larger vehicles like buses, as they may have blind spots and require more space when changing lanes or making turns.
+ 
+ These road users are important to be aware of because they can impact the car's trajectory and safety. The pedestrian may be crossing the street, which requires the car to slow down or stop if necessary. The traffic light indicates that the car should be prepared to stop or change lanes if the light changes. The bus, being a larger vehicle, may require more space and attention when maneuvering around it.","['movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",2,2,4,3,3,4,2,3,3,"- Hallucinations: The description mentions pedestrians, traffic lights, and buses, but only buses are present in the ground-truth annotations. The pedestrian and traffic light are hallucinated objects.
+- Safety relevance: The description focuses on the bus, which is a present safety-relevant actor, but also mentions pedestrians, which are present but not the dominant safety actors.
+- Overall quality: The description is clear and provides relevant information about the scene, including the presence of a bus and the traffic light.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: The description mentions pedestrians, traffic lights, and buses, but only buses are present in the ground-truth annotations. The pedestrian and traffic light are hallucinated objects.
+- Safety relevance: The description focuses on the bus, which is a present safety-relevant actor, but also mentions pedestrians, which are present but not the dominant safety actors.
+- Overall quality: The description is clear and provides relevant information about the scene, including the presence of a bus and the traffic light.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 3"
+scene-0757,8,scene-0757_sample_8.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is at an intersection with a traffic light.
+ - The traffic light is red, indicating that the car should stop.
+ - There is a white line on the road, which is likely a lane marker.
+ - There are no other cars or pedestrians visible in the image.
+ - The car is positioned in the middle lane of the intersection.
+ - The surrounding buildings suggest an urban environment.
+ 
+ Please note that this description is based on the visible elements in the image and does not include any inferred or predicted information.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Traffic Light**: The traffic light is located on the right side of the image, near the center. It is important to pay attention to the traffic light because it controls the flow of traffic at the intersection. By observing the traffic light, the vehicle can determine when it is safe to proceed or when it needs to stop.
+ 
+ 2. **Pedestrian**: There is a pedestrian visible on the left side of the image, near the center. It is important to be aware of pedestrians because they have the right of way in many situations and can suddenly cross the street. By monitoring the pedestrian, the vehicle can ensure it maintains a safe distance and is prepared to yield if necessary.
+ 
+ 3. **Other Vehicles**: There are other vehicles in the scene, including a bus and a truck. These vehicles are located on the left side of the image, near the center. It is important to be aware of other vehicles because they share the road and can also be affected by the traffic light. By monitoring the positions and movements of these vehicles, the vehicle can anticipate potential changes in traffic flow and make appropriate decisions.
+ 
+ 4. **Buildings**: The buildings are located on both sides of the street. They are important because they indicate the urban environment and the presence of other road users such as pedestrians and cyclists. By being aware of the buildings, the vehicle can anticipate the need for caution in areas with high pedestrian or cyclist traffic.
+ 
+ 5. **Traffic Signs**: There are traffic signs visible in the image, including a stop sign. These signs are important for providing guidance to the vehicle and ensuring that it follows the rules of the road. By observing the traffic signs, the vehicle can ensure it is driving safely and legally.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,4,4,3,4,4,2,3,4,"- Hallucinations: The VLM object description mentions traffic signs, but there are no traffic signs in the ground-truth annotations. Additionally, it mentions buildings, which are present in the ground-truth annotations but are not explicitly highlighted as safety-relevant.
+- Safety relevance: The VLM object description focuses on the pedestrian, which is present in the ground-truth annotations, and mentions other vehicles, which are also present. However, it does not explicitly highlight the traffic cone, which is also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and concise, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions traffic signs, but there are no traffic signs in the ground-truth annotations. Additionally, it mentions buildings, which are present in the ground-truth annotations but are not explicitly highlighted as safety-relevant.
+- Safety relevance: The VLM object description focuses on the pedestrian, which is present in the ground-truth annotations, and mentions other vehicles, which are also present. However, it does not explicitly highlight the traffic cone, which is also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and concise, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-0757,12,scene-0757_sample_12.json,"In the image, the autonomous vehicle is at an intersection with a traffic light showing a red signal. There are two other vehicles in the scene: a red van on the left side of the vehicle's lane, and a white pickup truck on the right side of the vehicle's lane. The van appears to be stationary, and the pickup truck is moving towards the intersection. The lane markings are visible, indicating that the vehicle is in the correct lane for the direction it is heading. The environment suggests an urban setting with buildings and a sidewalk visible in the background. The vehicle's sensors and algorithms would need to interpret these visual cues to make appropriate driving decisions, such as stopping, yielding, or proceeding through the intersection.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. The red van on the left side of the image. It is a Coca-Cola delivery van, which is a common vehicle type in urban areas. It is important to be aware of this vehicle because it may be making deliveries and could potentially stop or slow down frequently.
+ 
+ 2. The white pickup truck on the right side of the image. It is a larger vehicle, which could obstruct the view of other road users or pedestrians. It is important to be aware of this vehicle because it may be carrying heavy loads or equipment, which could affect its maneuverability.
+ 
+ 3. The traffic lights at the intersection. They are important for understanding when it is safe to proceed, turn, or stop.
+ 
+ 4. The pedestrians and cyclists that may be present in the scene. They are important to be aware of because they are vulnerable road users and require extra caution when navigating intersections.
+ 
+ 5. The other cars in the scene. They are important to be aware of because they may be making turns, stopping, or changing lanes, which could affect the vehicle's trajectory.
+ 
+ 6. The construction equipment or barriers in the scene. They are important to be aware of because they may indicate road work or changes in the road layout, which could require the vehicle to slow down or change lanes.
+ 
+ 7. The traffic signs and markings on the road. They are important for understanding the rules of the road and for maintaining a safe distance from other vehicles.","['movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",3,3,4,4,4,4,2,4,4,"- Hallucinations: The description mentions pedestrians and cyclists, which are not explicitly present in the ground-truth annotations, but are not explicitly contradicted either. Additionally, the description mentions traffic signs and markings, which are not present in the ground-truth annotations.
+- Safety relevance: The description focuses on vehicles, pedestrians, and road users, which are present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene, including the presence of vehicles, road markings, and the urban environment.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The description mentions pedestrians and cyclists, which are not explicitly present in the ground-truth annotations, but are not explicitly contradicted either. Additionally, the description mentions traffic signs and markings, which are not present in the ground-truth annotations.
+- Safety relevance: The description focuses on vehicles, pedestrians, and road users, which are present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene, including the presence of vehicles, road markings, and the urban environment.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0757,16,scene-0757_sample_16.json,"Based on the images provided, here is a concise description of the driving scene:
+ 
+ 1. The traffic light is currently red, indicating that the car should stop.
+ 2. There is a white car in the lane to the left of the car, which appears to be waiting for the traffic light to change.
+ 3. There is a pedestrian crossing the street, and the car should yield to them.
+ 4. There is a red van on the right side of the image, which is also waiting for the traffic light to change.
+ 5. The lane markings are visible, indicating the boundaries of the lanes.
+ 6. The car is positioned in the center lane, and there is no immediate need to change lanes.
+ 
+ Given the current state of the traffic light and the presence of the pedestrian, the car should come to a complete stop and wait for the pedestrian to cross and the traffic light to change to green before proceeding.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian**: The pedestrian is located on the right side of the image, near the crosswalk. They are walking across the street. It is important to pay attention to pedestrians because they are vulnerable road users and have the right of way at crosswalks.
+ 
+ 2. **Bicyclist**: The bicyclist is located on the right side of the image, near the crosswalk. They are riding their bike. It is important to pay attention to bicyclists because they are also vulnerable road users and may be sharing the road with the car.
+ 
+ 3. **Traffic Light**: The traffic light is located on the right side of the image, near the crosswalk. It is important to pay attention to traffic lights because they control the flow of traffic and ensure safety at intersections.
+ 
+ These road users are important to consider because they are all part of the traffic environment and their actions can affect the safety and smooth flow of traffic. As an autonomous vehicle, it is crucial to be aware of and respond to these road users to ensure safe and efficient driving.","['human.pedestrian.adult', 'movable_object.trafficcone', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.construction', 'vehicle.truck']",4,4,4,4,4,4,3,4,4,"- Hallucinations: The VLM scene description mentions traffic lights, which are not present in the ground-truth annotations. The VLM object description mentions bicyclists, which are present in the ground-truth annotations, but also mentions traffic lights, which are not.
+- Safety relevance: The VLM object description correctly focuses on pedestrians and bicyclists, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description mentions traffic lights, which are not present in the ground-truth annotations. The VLM object description mentions bicyclists, which are present in the ground-truth annotations, but also mentions traffic lights, which are not.
+- Safety relevance: The VLM object description correctly focuses on pedestrians and bicyclists, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-0796,0,scene-0796_sample_0.json,"In the image, the car is at an intersection with a traffic light visible in the upper right corner. The traffic light is currently red, indicating that the car should stop. There are other cars in the vicinity, some of which are moving and others are stationary, suggesting that the car is in a busy urban area. The lane markings are clearly visible, and the car is positioned in the correct lane for the direction it is heading. There are no pedestrians visible in the image. The road appears to be well-maintained with clear lane markings, and the surrounding area is lush with trees and greenery, suggesting a suburban or semi-urban setting.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the left side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. Vehicle: There is a vehicle on the right side of the image, which appears to be a car. It is important to be aware of other vehicles on the road, as they may be changing lanes, turning, or stopping.
+ 
+ 3. Bicycle: There is a bicycle on the right side of the image, near the car. Bicycles can be unpredictable and may suddenly change direction or stop. It is important to maintain a safe distance from bicycles and be prepared to react to their movements.
+ 
+ These road users are important to pay attention to because they are all part of the traffic environment and can potentially interact with the vehicle in various ways. Ensuring that the vehicle is aware of their presence and is prepared to react to their actions is crucial for safe driving.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,3,4,2,4,4,2,4,3,"- Hallucinations: bicycle
+- Safety relevance: vehicles and pedestrians covered, no major present actors missed
+- Overall quality: clear and informative, but incomplete
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: bicycle
+- Safety relevance: vehicles and pedestrians covered, no major present actors missed
+- Overall quality: clear and informative, but incomplete
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 3"
+scene-0796,4,scene-0796_sample_4.json,"In the image, the car is at a four-way intersection with a green traffic light. The lane markings are clearly visible, indicating that the car is in the correct lane. There are no other cars or pedestrians visible in the immediate vicinity, suggesting that the car is currently in a safe and clear driving environment. The road appears to be well-maintained with no visible obstructions.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle in the Right Lane**: This is a car that is driving in the right lane of the road. It is important to be aware of this vehicle because it is a potential lane-change partner or a vehicle that may be turning right at an intersection. Being aware of its position and speed will help in making safe lane changes or anticipating its actions.
+ 
+ 2. **Vehicle in the Left Lane**: This is a car that is driving in the left lane of the road. It is important to be aware of this vehicle because it is a potential lane-change partner or a vehicle that may be turning left at an intersection. Being aware of its position and speed will help in making safe lane changes or anticipating its actions.
+ 
+ 3. **Pedestrian on the Sidewalk**: There is a pedestrian walking on the sidewalk. It is important to be aware of pedestrians because they may cross the road unexpectedly, especially at intersections or crosswalks. Being aware of their presence will help in anticipating their actions and ensuring safe driving.
+ 
+ These road users are important to consider because they are all part of the traffic environment and their actions can directly impact the safety of the autonomous vehicle.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,4,4,4,4,4,2,4,"- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (vehicles and pedestrians) but does not emphasize the dominant present safety actors (vehicles and pedestrians).
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 2
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (vehicles and pedestrians) but does not emphasize the dominant present safety actors (vehicles and pedestrians).
+- Overall quality: The description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 2
+Overall quality: 4"
+scene-0796,8,scene-0796_sample_8.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is on a two-lane road.
+ - There are no visible traffic lights in the image.
+ - There are no other cars or pedestrians visible in the image.
+ - Lane markings are clearly visible, indicating that the car is in the right lane.
+ - The road appears to be clear and there are no obstructions or hazards visible.
+ - The car is stationary, as indicated by the lack of motion blur in the image.
+ 
+ Please note that this description is based solely on the image provided and does not include any information about the car's speed, direction, or any other contextual information that might be relevant for autonomous driving.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle in the left lane**: This is a car that is ahead of you in the left lane. It is important to be aware of its position and speed because it could potentially change lanes or make a turn, which would require you to react accordingly to maintain a safe distance and avoid any potential collisions.
+ 
+ 2. **Vehicle in the right lane**: This is a car that is ahead of you in the right lane. It is important to be aware of its position and speed because it could potentially change lanes or make a turn, which would require you to react accordingly to maintain a safe distance and avoid any potential collisions.
+ 
+ 3. **Pedestrian on the sidewalk**: This is a person walking on the sidewalk. It is important to be aware of their presence because they might cross the street unexpectedly, especially at intersections. You should be prepared to stop if necessary to ensure their safety.
+ 
+ 4. **Traffic light**: There is a traffic light visible in the image. It is important to be aware of its signals to ensure you are following the traffic rules and to prepare for any changes in the traffic flow.
+ 
+ 5. **Other vehicles in the distance**: There are other vehicles visible in the distance. It is important to be aware of their presence because they could potentially change lanes or make a turn, which would require you to react accordingly to maintain a safe distance and avoid any potential collisions.
+ 
+ 6. **Parked vehicles**: There are parked vehicles on the side of the road. It is important to be aware of their presence because they could obstruct your view of the road ahead, and you should be prepared to slow down or change lanes if necessary to avoid any potential collisions.
+ 
+ 7. **Signage**: There are signs visible in the image. It is important to be aware of their content to ensure you are following the traffic rules and to prepare for any changes in the traffic flow.
+ 
+ 8. **Potential obstacles**: There might be other obstacles such as debris on the road, potholes, or construction work that could affect your driving. It is important to be aware of these potential obstacles to ensure a safe driving experience.","['human.pedestrian.adult', 'vehicle.car', 'vehicle.motorcycle']",3,3,4,3,4,4,2,3,4,"- Hallucinations: The VLM object description mentions ""traffic light"", which is not supported by the ground-truth annotations. Additionally, it mentions ""other vehicles in the distance"", ""parked vehicles"", ""signage"", and ""potential obstacles"", which are not explicitly present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on vehicles and pedestrians, which are present in the ground-truth annotations. However, it also mentions traffic lights, which are not present, and other vehicles in the distance, which are not explicitly mentioned in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and well-structured, providing a concise overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions ""traffic light"", which is not supported by the ground-truth annotations. Additionally, it mentions ""other vehicles in the distance"", ""parked vehicles"", ""signage"", and ""potential obstacles"", which are not explicitly present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on vehicles and pedestrians, which are present in the ground-truth annotations. However, it also mentions traffic lights, which are not present, and other vehicles in the distance, which are not explicitly mentioned in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and well-structured, providing a concise overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-0796,12,scene-0796_sample_12.json,"In the image, the car is at an intersection with a green traffic light. There are other vehicles, including a car ahead and a bus to the right, both stopped at the intersection. The lane markings indicate that the car is in the correct lane for its direction of travel. The road appears to be clear, and there are no pedestrians visible in the image. The car is stationary, waiting for the traffic light to change.","In the driving scene, there are several road users that you should pay attention to:
+ 
+ 1. **Vehicle in the Left Lane**: This is a car that is in the left lane of the road. It is important to be aware of this vehicle because it is in your blind spot and you need to ensure you maintain a safe distance and are prepared to change lanes if necessary.
+ 
+ 2. **Vehicle in the Right Lane**: This is a car that is in the right lane of the road. It is important to be aware of this vehicle because it is in your blind spot and you need to ensure you maintain a safe distance and are prepared to change lanes if necessary.
+ 
+ 3. **Pedestrian on the Sidewalk**: There is a pedestrian walking on the sidewalk. It is important to be aware of this pedestrian because they may cross the road unexpectedly, especially at intersections. You should be prepared to stop if necessary to ensure their safety.
+ 
+ 4. **Traffic Light**: There is a traffic light visible in the image. It is important to be aware of this traffic light because it controls the flow of traffic at the intersection. You should pay attention to the traffic light signals to ensure you are following the correct right-of-way rules.
+ 
+ 5. **Other Vehicles**: There are other vehicles visible in the image, including a bus and a truck. It is important to be aware of these vehicles because they may be making turns or changing lanes, and you need to anticipate their movements to maintain safety on the road.
+ 
+ 6. **Parked Vehicles**: There are parked vehicles on the side of the road. It is important to be aware of these vehicles because they may obstruct your view or the view of other drivers, and you need to be cautious when maneuvering around them.
+ 
+ 7. **Buildings and Trees**: The presence of buildings and trees indicates that this is an urban environment. It is important to be aware of the road conditions, such as potholes or debris, which may be hidden by the vegetation or the shadows cast by the trees.
+ 
+ 8. **Other Traffic Signs**: There may be other traffic signs visible in the image, such as speed limit signs or road markings. It is important to be aware of these signs because they provide important information for safe driving.
+ 
+ Remember, as an autonomous driving labeller, your primary goal is to ensure the safety of all road users, including pedestrians, cyclists, and other vehicles. Always prioritize safety and follow traffic rules and regulations.","['vehicle.car', 'vehicle.motorcycle']",2,2,4,2,4,4,2,4,4,"- Hallucinations: vehicle.motorcycle is not mentioned as a specific vehicle type, but it is present in the ground-truth annotations. Additionally, the description mentions ""other vehicles"" which is not a specific object category present in the ground-truth annotations.
+- Safety relevance: The description focuses on safety-critical actors present in the ground-truth annotations, including vehicles and pedestrians.
+- Overall quality: The description is clear and provides a good overview of the scene, including the presence of other vehicles and the traffic light.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: vehicle.motorcycle is not mentioned as a specific vehicle type, but it is present in the ground-truth annotations. Additionally, the description mentions ""other vehicles"" which is not a specific object category present in the ground-truth annotations.
+- Safety relevance: The description focuses on safety-critical actors present in the ground-truth annotations, including vehicles and pedestrians.
+- Overall quality: The description is clear and provides a good overview of the scene, including the presence of other vehicles and the traffic light.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0796,16,scene-0796_sample_16.json,"In the image, the car is approaching an intersection with a green traffic light. The lane markings are clear, indicating a designated right lane. There are no other visible vehicles or pedestrians in the immediate vicinity. The road appears to be clear and the weather is sunny, suggesting good driving conditions. The car is currently in the right lane and should continue to follow the traffic light signals and lane markings.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Traffic Light: The traffic light is located at the top left of the image. It is important to pay attention to the traffic light because it regulates the flow of traffic and ensures safety at intersections.
+ 
+ 2. Vehicle on the Road: There is a vehicle visible in the image, located towards the right side of the road. It is important to be aware of other vehicles on the road to maintain a safe distance and avoid potential collisions.
+ 
+ 3. Pedestrian: There is a pedestrian visible in the image, located towards the right side of the road. It is important to be aware of pedestrians because they may cross the road unexpectedly, and it is crucial to yield to them to ensure their safety.
+ 
+ These road users are important to pay attention to because they can significantly impact the safety and smooth flow of traffic. By being aware of their presence and actions, an autonomous vehicle can make informed decisions to navigate the road safely.",['vehicle.car'],2,2,4,3,4,4,2,4,4,"- Hallucinations: The VLM object description mentions pedestrians, which are present in the ground-truth annotations, but also mentions traffic lights, which are not present in the ground-truth annotations. Additionally, it mentions bicyclists, which are not present in the ground-truth annotations.
+- Safety relevance: The VLM object description correctly focuses on the present safety-critical actors, vehicles and pedestrians.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions pedestrians, which are present in the ground-truth annotations, but also mentions traffic lights, which are not present in the ground-truth annotations. Additionally, it mentions bicyclists, which are not present in the ground-truth annotations.
+- Safety relevance: The VLM object description correctly focuses on the present safety-critical actors, vehicles and pedestrians.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-0916,0,scene-0916_sample_0.json,"In the image, the car is stationary at a traffic light that is currently red. The lane markings are visible, indicating that the car is in the correct lane. There are no other cars or pedestrians in the immediate vicinity that are moving or interacting with the car. The environment suggests a suburban or urban area with trees and buildings in the background. The sky is overcast, and the lighting conditions appear to be natural, suggesting it might be daytime. The car is not making any sudden movements or maneuvers, and there are no other vehicles or pedestrians that are close enough to require immediate attention. The car is positioned behind a motorcycle, which is also stationary at the red light. The overall scene is calm and orderly, with no immediate need for action based on the available information.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian**: The person is located on the left side of the image, near the motorcycles. They are standing and appear to be looking towards the camera. It is important to be aware of pedestrians as they may cross the road unexpectedly, and they have the right of way in most situations.
+ 
+ 2. **Motorcycles**: There are several motorcycles parked on the left side of the image. They are important to be aware of because they may be moving in and out of the parking area, and their riders may be entering or exiting the parking area.
+ 
+ 3. **Cars**: There are several cars parked on the right side of the image. They are important to be aware of because they may be moving in and out of the parking area, and their drivers may be entering or exiting the parking area.
+ 
+ It is crucial to be aware of these road users to ensure safe navigation through the parking lot. The pedestrian's presence indicates that there might be foot traffic in the area, and the motorcycles and cars suggest that there could be moving vehicles. Being attentive to these road users will help in avoiding potential collisions and ensuring a safe driving environment.","['human.pedestrian.adult', 'static_object.bicycle_rack', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,4,4,4,3,3,4,4,"- Hallucinations: The description mentions ""traffic light that is currently red"", but this is not supported by the ground-truth annotations. Additionally, the description mentions ""pedestrian's presence indicates that there might be foot traffic in the area"", which is a minor hallucination as it is not explicitly stated in the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors from GT, including pedestrians and vehicles.
+- Overall quality: The description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The description mentions ""traffic light that is currently red"", but this is not supported by the ground-truth annotations. Additionally, the description mentions ""pedestrian's presence indicates that there might be foot traffic in the area"", which is a minor hallucination as it is not explicitly stated in the ground-truth annotations.
+- Safety relevance: The description focuses on present safety-relevant actors from GT, including pedestrians and vehicles.
+- Overall quality: The description is clear and well-structured, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-0916,4,scene-0916_sample_4.json,"Based on the image provided, it appears to be a parking lot with several cars parked in various positions. There are no visible traffic lights or pedestrians in the immediate vicinity. The lane markings are clear, indicating designated parking spaces. The car is stationary, suggesting it is either parked or waiting for the driver to return. The surrounding area is lush with trees and foliage, indicating a well-maintained parking lot. The sky is overcast, suggesting it might be a cloudy day. There are no other cars in motion or any other vehicles that are moving in the immediate vicinity. The image does not provide any information about the car's speed or direction of travel.","In the image provided, there are several road users that you should pay attention to as an autonomous driving labeller:
+ 
+ 1. **Motorcycle**: The motorcycle is located on the left side of the image, near the center. It appears to be moving in the same direction as the car, possibly following the same route. It's important to be aware of the motorcycle's position and speed because it could be overtaken or change lanes unexpectedly.
+ 
+ 2. **Pedestrian**: There is a pedestrian visible on the right side of the image, near the center. The pedestrian seems to be walking on the sidewalk, possibly crossing the street or waiting to do so. It's crucial to monitor pedestrians as they can suddenly step onto the road, especially at intersections or crosswalks.
+ 
+ 3. **Other Vehicles**: There are other vehicles in the image, including cars and a truck. These vehicles are located on the right side of the image, near the center. They are also moving in the same direction as the car. It's important to be aware of their positions and speeds to anticipate any changes in traffic flow or potential merging maneuvers.
+ 
+ As an autonomous driving system, it's essential to continuously monitor the positions and actions of all road users, including motorcycles, pedestrians, and other vehicles, to ensure safe navigation and decision-making.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,3,4,4,4,4,3,3,"- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (motorcycle, pedestrian, and other vehicles) but also mentions other vehicles and the car, which are not safety-critical in this context.
+- Overall quality: The description is clear and provides a good overview of the scene, but it could be more specific about the objects and their positions.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (motorcycle, pedestrian, and other vehicles) but also mentions other vehicles and the car, which are not safety-critical in this context.
+- Overall quality: The description is clear and provides a good overview of the scene, but it could be more specific about the objects and their positions.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3"
+scene-0916,8,scene-0916_sample_8.json,"In the image, the car is parked on the side of a road. There are no visible traffic lights, and no other cars or pedestrians are visible in the immediate vicinity. The lane markings indicate that the car is parked in a designated parking area, and there is a clear path ahead. The road appears to be relatively quiet with no immediate traffic or pedestrians. The car is stationary, and there are no indications of any imminent driving maneuvers.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian on the sidewalk**: There is a pedestrian on the sidewalk to the left of the image. It is important to be aware of pedestrians as they may cross the street unexpectedly. Maintaining a safe distance and being prepared to yield to pedestrians is crucial for safety.
+ 
+ 2. **Vehicle ahead**: There is a vehicle ahead of the car, which appears to be a white SUV. It is important to maintain a safe following distance and be prepared to react to any sudden changes in the vehicle's speed or direction.
+ 
+ 3. **Vehicle behind**: There is a vehicle behind the car, which appears to be a blue car. It is important to be aware of the vehicle behind to ensure that you do not obstruct its path or cause it to follow too closely, which could lead to an accident.
+ 
+ These road users are important because they are in close proximity to the car and their actions can directly impact the safety of the vehicle and its passengers.","['human.pedestrian.adult', 'static_object.bicycle_rack', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",3,4,3,4,4,4,4,4,4,"- Hallucinations: None
+- Safety relevance: The description focuses on the pedestrian on the sidewalk, the vehicle ahead, and the vehicle behind, which are all present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene, including the parking area, lane markings, and the absence of traffic lights.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on the pedestrian on the sidewalk, the vehicle ahead, and the vehicle behind, which are all present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene, including the parking area, lane markings, and the absence of traffic lights.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4"
+scene-0916,12,scene-0916_sample_12.json,"In the image, the car is stationary at a traffic light, which is red. There are several other cars parked on both sides of the street, and the lane markings are clearly visible. The road appears to be in a residential area with trees lining the street. There are no visible pedestrians or other moving vehicles in the immediate vicinity. The weather seems to be overcast, and the lighting suggests it might be early morning or late afternoon.","In the image, there are several road users that you should pay attention to as an autonomous driving system:
+ 
+ 1. **Vehicle in the Left Lane**: This is a white van that appears to be making a left turn onto the street. It is important to be aware of this vehicle because it is changing lanes, which could affect your lane positioning. You should maintain a safe distance and be prepared to yield the right of way if necessary.
+ 
+ 2. **Vehicle in the Right Lane**: There is a blue car in the right lane that is approaching the intersection. This vehicle is important because it is a potential obstacle or hazard that you need to be aware of. You should be prepared to yield the right of way if the blue car is turning or if it is in your path.
+ 
+ 3. **Pedestrian on the Sidewalk**: There is a pedestrian visible on the sidewalk. As an autonomous vehicle, you must always be aware of pedestrians and be prepared to yield the right of way if they are crossing the street or if they are in your path.
+ 
+ These road users are important because they are all part of the traffic environment and their actions can affect your vehicle's trajectory. As an autonomous driving system, you must constantly monitor the road and make decisions based on the behavior of these road users to ensure safe navigation through the intersection.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,4,4,4,4,4,4,4,"- Hallucinations: The VLM scene description mentions ""several other cars parked on both sides of the street"", which is supported by the ground-truth annotations. The VLM object description mentions a white van making a left turn, a blue car approaching the intersection, and a pedestrian on the sidewalk, all of which are supported by the ground-truth annotations. There are no unsupported claims about objects or events.
+- Safety relevance: The VLM object description focuses on safety-critical actors that are actually present in the ground-truth annotations, including vehicles and pedestrians.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description mentions ""several other cars parked on both sides of the street"", which is supported by the ground-truth annotations. The VLM object description mentions a white van making a left turn, a blue car approaching the intersection, and a pedestrian on the sidewalk, all of which are supported by the ground-truth annotations. There are no unsupported claims about objects or events.
+- Safety relevance: The VLM object description focuses on safety-critical actors that are actually present in the ground-truth annotations, including vehicles and pedestrians.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 4
+Overall quality: 4"
+scene-0916,16,scene-0916_sample_16.json,"The image shows a road with a clear view ahead. There are no traffic lights visible in the image. The road appears to be a two-way street with lane markings visible. There are several cars parked on the side of the road, and a few cars are moving in the opposite direction. There are no pedestrians visible in the image. The road seems to be in a residential area with trees lining the street. The weather appears to be overcast, and the lighting suggests it might be late afternoon or early evening.","Based on the image provided, here are two road users that you should pay attention to:
+ 
+ 1. **White Truck with Flatbed**: The white truck with a flatbed is located on the left side of the road, just ahead of your vehicle. It appears to be stationary or moving very slowly, possibly parked or waiting at a stop sign or traffic light. It's important to be aware of this vehicle because it may obstruct your view of the road ahead, and you need to be prepared to react if it suddenly starts moving.
+ 
+ 2. **Blue Car**: The blue car is parked on the right side of the road, just ahead of the white truck. It's important to be aware of this vehicle because it may obstruct your view of the road ahead, and you need to be prepared to react if it suddenly starts moving. Additionally, if the blue car is parked illegally or in a way that obstructs traffic, you may need to navigate around it carefully to avoid any potential accidents or traffic violations.
+ 
+ Remember to always be aware of your surroundings and anticipate the actions of other road users to ensure safe driving.","['vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle', 'vehicle.truck']",4,4,4,4,4,4,4,3,4,"- Hallucinations: None
+- Safety relevance: The description focuses on the white truck and blue car, which are present in the ground-truth annotations. It does not mention pedestrians, which are also present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on the white truck and blue car, which are present in the ground-truth annotations. It does not mention pedestrians, which are also present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4"
+scene-1077,0,scene-1077_sample_0.json,"In the image, the car is on a multi-lane road at night. The lane markings are visible, indicating that the car is in the right lane of a two-lane road. There are no pedestrians visible in the image. The traffic lights are not clearly visible, but the car appears to be in motion, as indicated by the blurred lights of other vehicles in the background. The car's headlights are on, and the taillights of the car are visible, suggesting that the car is moving forward. The image does not provide enough information to determine the current traffic light status or the actions of other vehicles in detail.","As an autonomous driving labeller, I would analyze the image sequence to identify relevant road users and their actions. Based on the image provided, here are two road users that should be considered:
+ 
+ 1. **Vehicle in the right lane**: This vehicle is located to the right of the camera's perspective and appears to be moving in the same direction as the camera. It is important to be aware of this vehicle because it is in the same lane as the camera's vehicle, and maintaining a safe distance is crucial to avoid potential collisions.
+ 
+ 2. **Vehicle in the left lane**: This vehicle is located to the left of the camera's perspective and appears to be moving in the same direction as the camera's vehicle. It is important to be aware of this vehicle because it is in the adjacent lane, and changing lanes without proper signaling or checking for oncoming traffic can lead to accidents.
+ 
+ In addition to these vehicles, it's also important to consider other road users such as pedestrians, cyclists, and motorcyclists, as well as traffic signals and road signs. However, without additional information from the image sequence, it's not possible to provide details about these other road users.",['vehicle.car'],4,4,3,4,4,4,2,4,4,"- Hallucinations: The VLM object description mentions ""pedestrians, cyclists, and motorcyclists"" as important road users, but these are not present in the ground-truth annotations. Additionally, it mentions ""traffic signals and road signs"" without providing details, which is not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description correctly focuses on the two vehicles present in the ground-truth annotations, which are safety-critical actors.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of lane markings, headlights, and taillights.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions ""pedestrians, cyclists, and motorcyclists"" as important road users, but these are not present in the ground-truth annotations. Additionally, it mentions ""traffic signals and road signs"" without providing details, which is not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description correctly focuses on the two vehicles present in the ground-truth annotations, which are safety-critical actors.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of lane markings, headlights, and taillights.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-1077,4,scene-1077_sample_4.json,"The image shows a nighttime driving scene with a car in motion on a two-lane road. The car is in the right lane, and there is a visible lane marking. The road appears to be wet, suggesting recent rain. There are no pedestrians visible in the image. Other vehicles are present in the background, but they are too far away to discern their actions. There are no traffic lights visible in the image. The lighting is artificial, with streetlights illuminating the road ahead. The car's headlights are on, and there is a slight glare from the camera flash. The image quality is somewhat grainy, which is typical for nighttime photography.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle in the Left Lane**: This is a car that is driving in the left lane, slightly ahead of the vehicle from which the image is taken. It is important to be aware of this vehicle because it is in the same lane as the vehicle from which the image is taken, and maintaining a safe distance is crucial to avoid collisions.
+ 
+ 2. **Vehicle in the Right Lane**: This is a car that is driving in the right lane, slightly behind the vehicle from which the image is taken. It is important to be aware of this vehicle because it is in the same lane as the vehicle from which the image is taken, and maintaining a safe distance is crucial to avoid collisions.
+ 
+ 3. **Oncoming Traffic**: There are several cars visible in the oncoming lane. It is important to be aware of oncoming traffic because they are moving in the opposite direction of the vehicle from which the image is taken. This is crucial for safe lane changes and to avoid head-on collisions.
+ 
+ The image shows a well-lit street at night, with the vehicle's headlights illuminating the road ahead. The presence of multiple vehicles in different lanes indicates that the vehicle from which the image is taken is in a multi-lane roadway, which requires constant attention to the surrounding traffic to ensure safe driving.",['vehicle.car'],4,4,4,4,4,4,4,3,4,"- Hallucinations: None
+- Safety relevance: Vehicles in the left and right lanes, oncoming traffic
+- Overall quality: Clear description of the scene, including lighting and road conditions
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: Vehicles in the left and right lanes, oncoming traffic
+- Overall quality: Clear description of the scene, including lighting and road conditions
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4"
+scene-1077,8,scene-1077_sample_8.json,"In the image, the car is driving on a two-lane road at night. The lane markings are visible, indicating that the car is in the correct lane. There are no traffic lights visible in the image. Other cars are present in the opposite lane, and there are no pedestrians visible. The road appears to be wet, suggesting recent rainfall. The car's headlights are on, illuminating the road ahead. The overall scene suggests a quiet, urban setting with moderate traffic.","Based on the image provided, here are two road users that you should pay attention to:
+ 
+ 1. **Oncoming Traffic**: There is a vehicle approaching from the opposite direction. It is located in the right lane of the road. It is important to be aware of oncoming traffic to ensure you maintain a safe distance and are prepared to react to any sudden changes in their speed or direction.
+ 
+ 2. **Pedestrians**: There is a pedestrian visible on the right side of the road. It is important to be cautious around pedestrians, especially at night when visibility is reduced. You should be prepared to yield to the pedestrian if necessary and ensure you are following the speed limit and traffic rules.
+ 
+ Please note that these are just two examples of road users that you should be aware of. In a real-world driving scenario, there could be many more, including cyclists, motorcyclists, and other vehicles that may not be immediately visible in the image provided.","['movable_object.barrier', 'vehicle.car']",2,2,3,3,3,4,2,3,4,"- Hallucinations: Pedestrians, bicyclists, motorcyclists (mentioned as examples of road users that should be aware of, but not present in the ground-truth annotations)
+- Safety relevance: Vehicles (correctly mentioned as oncoming traffic) and pedestrian (correctly mentioned as present on the right side of the road)
+- Overall quality: The description provides a clear and detailed account of the scene, including the road conditions, lane markings, and the presence of other cars.
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: Pedestrians, bicyclists, motorcyclists (mentioned as examples of road users that should be aware of, but not present in the ground-truth annotations)
+- Safety relevance: Vehicles (correctly mentioned as oncoming traffic) and pedestrian (correctly mentioned as present on the right side of the road)
+- Overall quality: The description provides a clear and detailed account of the scene, including the road conditions, lane markings, and the presence of other cars.
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-1077,12,scene-1077_sample_12.json,"In the image, the car is on a street at night. The lane markings are visible, indicating that the car is driving in a designated lane. There are no pedestrians or other vehicles directly in front of the car, suggesting that the car is following a safe distance from other traffic. The traffic lights are not visible in the image, so it's not possible to determine the current state of the traffic lights. The street is illuminated by the car's headlights and the ambient light from the surrounding area. The overall scene suggests a quiet, urban environment with no immediate traffic concerns.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle in the Left Lane**: This is a car that is ahead of the vehicle from which the image is taken. It is important to be aware of this vehicle's position and speed because it is a potential obstacle that the autonomous vehicle must navigate around. The car's position is to the left of the lane in which the autonomous vehicle is driving, and its speed is not visible in the image.
+ 
+ 2. **Vehicle in the Right Lane**: This is a bus that is ahead of the vehicle from which the image is taken. It is important to be aware of this vehicle's position and speed because it is a larger vehicle that may require more space to maneuver. The bus's position is to the right of the lane in which the autonomous vehicle is driving, and its speed is not visible in the image.
+ 
+ 3. **Pedestrian on the Sidewalk**: There is a pedestrian visible on the sidewalk to the right of the autonomous vehicle. It is important to be aware of pedestrians because they may unexpectedly enter the road or cross it. The pedestrian's position is to the right of the lane in which the autonomous vehicle is driving, and they appear to be walking along the sidewalk.
+ 
+ These road users are important to the autonomous vehicle because they are potential obstacles or hazards that the vehicle must navigate around safely. The autonomous vehicle must maintain a safe distance from these vehicles and be prepared to react to any sudden changes in their behavior or position.","['movable_object.barrier', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",2,2,4,3,3,4,4,3,3,"- Hallucinations: None
+- Safety relevance: The description focuses on the present safety-relevant actors (vehicles and pedestrians), but misses the barrier on the road.
+- Overall quality: The description is clear and provides a good overview of the scene, but could be more specific about the environment and objects present.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on the present safety-relevant actors (vehicles and pedestrians), but misses the barrier on the road.
+- Overall quality: The description is clear and provides a good overview of the scene, but could be more specific about the environment and objects present.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3"
+scene-1077,16,scene-1077_sample_16.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ - The car is on a multi-lane road at night.
+ - There are no visible traffic lights in the image.
+ - There are other cars visible in the lanes ahead, but they are not in close proximity to the car.
+ - The lane markings are clear and visible.
+ - The car is in the right lane of the road.
+ - The road appears to be clear of pedestrians.
+ - The lighting conditions suggest that the car's headlights are on, and there are streetlights illuminating the road ahead.
+ 
+ Please note that this description is based on the available information and the assumption that the car is stationary at the moment the image was captured.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Oncoming Traffic**: There is a white vehicle visible in the distance, approaching from the opposite direction. This vehicle is important because it is part of the traffic flow and you need to maintain a safe distance to avoid collisions.
+ 
+ 2. **Pedestrians**: There are two pedestrians visible on the right side of the image. They are important because they are vulnerable road users and you need to be cautious when approaching or overtaking them to ensure their safety.
+ 
+ 3. **Other Vehicles**: There are several other vehicles visible in the distance, including a truck and a car. These vehicles are important because they are part of the traffic flow and you need to be aware of their positions and actions to navigate safely.
+ 
+ 4. **Traffic Lights**: There are traffic lights visible in the image, which are important for regulating the flow of traffic and ensuring safety at intersections.
+ 
+ 5. **Street Lights**: There are street lights visible in the image, which are important for providing illumination during nighttime or low-light conditions.
+ 
+ 6. **Road Markings**: There are road markings visible in the image, which are important for indicating lanes, boundaries, and other important information for safe driving.
+ 
+ 7. **Signage**: There are signs visible in the image, which are important for providing information about road conditions, directions, and other important information for safe driving.
+ 
+ 8. **Potential Obstacles**: There are no visible obstacles in the image, but it's important to be aware of potential obstacles such as debris on the road, animals crossing, or any other unexpected events that could require a quick reaction.
+ 
+ 9. **Other Vehicles' Lights**: There are other vehicles' lights visible in the image, which are important for indicating the actions of other road users, such as turning signals, brake lights, or headlights.
+ 
+ 10. **Road Surface**: The road surface is important for ensuring a safe and smooth ride. It's important to be aware of any potential hazards such as potholes, wet spots, or any other irregularities that could affect the vehicle's handling.","['movable_object.barrier', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",2,2,4,2,3,4,2,3,4,"- Hallucinations: The VLM scene description does not mention unsupported object categories. The VLM object description mentions a white vehicle approaching from the opposite direction, which is supported by the ground-truth annotations. However, it also mentions pedestrians on the right side of the image, which is not supported by the ground-truth annotations. Additionally, it mentions traffic lights, which are not present in the ground-truth annotations, but this is not penalized according to the criteria.
+- Safety relevance: The VLM object description focuses on the white vehicle approaching from the opposite direction, which is a safety-critical actor present in the ground-truth annotations. It also mentions other vehicles in the distance, which are also safety-critical actors. However, it does not mention the vehicle in the right lane of the road, which is also a safety-critical actor present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a concise overview of the driving scene. It mentions the car's position, the road markings, and the lighting conditions, which are all relevant details.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description does not mention unsupported object categories. The VLM object description mentions a white vehicle approaching from the opposite direction, which is supported by the ground-truth annotations. However, it also mentions pedestrians on the right side of the image, which is not supported by the ground-truth annotations. Additionally, it mentions traffic lights, which are not present in the ground-truth annotations, but this is not penalized according to the criteria.
+- Safety relevance: The VLM object description focuses on the white vehicle approaching from the opposite direction, which is a safety-critical actor present in the ground-truth annotations. It also mentions other vehicles in the distance, which are also safety-critical actors. However, it does not mention the vehicle in the right lane of the road, which is also a safety-critical actor present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a concise overview of the driving scene. It mentions the car's position, the road markings, and the lighting conditions, which are all relevant details.
+
+Hallucinations: 2
+Safety relevance: 3
+Overall quality: 4"
+scene-1094,0,scene-1094_sample_0.json,"In the image, the car is at an intersection with a traffic light visible in the upper right corner. The traffic light is currently green, indicating that the car has the right of way to proceed. There are other vehicles in the scene, including a car to the left of the car in question and a car to the right, both of which appear to be stationary. There are also pedestrians visible on the sidewalk to the right of the car, and a bicycle parked on the sidewalk. The lane markings are clear, and the car is positioned in the center lane of the road. The overall scene suggests a typical urban environment with traffic regulations in place.","In the image provided, as an autonomous driving labeller, I would pay attention to the following road users:
+ 
+ 1. Pedestrian: The person is crossing the street at a crosswalk. It is important to yield to pedestrians and ensure they are safely across the road before proceeding.
+ 
+ 2. Bicyclist: The bicyclist is riding on the right side of the road, which is the correct side for bicycles in many jurisdictions. It is important to maintain a safe distance and be aware of bicyclists to avoid collisions.
+ 
+ 3. Traffic lights: There are traffic lights visible in the image. It is crucial to obey traffic signals to ensure safe and orderly traffic flow.
+ 
+ These road users are important to consider because they are all part of the traffic environment and their actions can affect the safety of the vehicle and its passengers.","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.car']",4,4,3,4,4,4,3,3,4,"- Hallucinations: The VLM object description mentions traffic lights, which are not supported by the ground-truth annotations. Additionally, it does not explicitly mention the car, which is present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on pedestrians and bicyclists, which are present in the ground-truth annotations. However, it does not explicitly mention the car, which is also present and safety-critical.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions traffic lights, which are not supported by the ground-truth annotations. Additionally, it does not explicitly mention the car, which is present in the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on pedestrians and bicyclists, which are present in the ground-truth annotations. However, it does not explicitly mention the car, which is also present and safety-critical.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 3
+Overall quality: 4"
+scene-1094,4,scene-1094_sample_4.json,"In the image, the car is at a red traffic light, as indicated by the illuminated red light in the upper right corner. The vehicle is stationary, waiting for the light to change. There are other cars in the vicinity, including a truck and a car to the right of the car in question. The lane markings are visible, and the car is positioned within its lane. The surrounding environment includes a building with illuminated windows, suggesting it might be evening or nighttime. The road appears to be a typical urban street with clear lane markings.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **White Truck (0.37 seconds ago)**: The white truck is located on the right side of the road, just behind the van. It appears to be in motion, possibly turning or changing lanes. It's important to be aware of its position and actions because it could potentially obstruct the view of other road users or make sudden maneuvers.
+ 
+ 2. **Van (0.28 seconds ago)**: The van is directly in front of the vehicle from which the image is taken. It's important to maintain a safe following distance and be prepared for any sudden braking or changes in speed.
+ 
+ 3. **Traffic Light (0.00 seconds ago)**: Although the traffic light is not a moving road user, it's important to pay attention to it as it controls the flow of traffic. The traffic light is located on the right side of the image, and it's crucial to obey its signals to ensure safe navigation through the intersection.
+ 
+ These road users are important to be aware of because they are in close proximity to the vehicle and their actions can directly impact the safety of the autonomous vehicle.","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.bus.rigid', 'vehicle.car']",3,4,4,3,3,4,2,1,4,"- Hallucinations: The white truck and van are not present in the ground-truth annotations, but they are mentioned in the VLM object description. The traffic light is not a hallucination since it is not explicitly mentioned in the ground-truth annotations, but it is not a major hallucination either since it is not a moving road user.
+- Safety relevance: The VLM object description focuses on the van and the traffic light, which are not safety-critical actors present in the ground-truth annotations. The white truck and van are not present in the ground-truth annotations, but they are mentioned in the description.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 1
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The white truck and van are not present in the ground-truth annotations, but they are mentioned in the VLM object description. The traffic light is not a hallucination since it is not explicitly mentioned in the ground-truth annotations, but it is not a major hallucination either since it is not a moving road user.
+- Safety relevance: The VLM object description focuses on the van and the traffic light, which are not safety-critical actors present in the ground-truth annotations. The white truck and van are not present in the ground-truth annotations, but they are mentioned in the description.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 1
+Overall quality: 4"
+scene-1094,8,scene-1094_sample_8.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ - The car is on a multi-lane road at night.
+ - The lane markings are visible, indicating that the car is in the correct lane.
+ - There are other vehicles in the adjacent lanes, suggesting that the car is in a busy area with traffic.
+ - The car is following the lane markings and maintaining a safe distance from the vehicles in the adjacent lanes.
+ - There are no visible traffic lights in the image, so it's not possible to determine the current traffic light status.
+ - The car appears to be stationary, as there are no indications of movement or acceleration.
+ - The road is well-lit, likely by streetlights, which is typical for urban nighttime driving.
+ 
+ Please note that this description is based on the available information from the image and does not include any inferred or assumed information.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Vehicle in front of you**: The car in front of you is at a distance of approximately 100 meters, as indicated by the timestamp on the image. It is important to maintain a safe following distance and to be aware of its actions, such as braking or turning, to ensure a safe driving environment.
+ 
+ 2. **Vehicle to the right**: There is a vehicle to the right of your lane, which is at a distance of about 150 meters. It is important to be aware of this vehicle's actions as well, as it could potentially change lanes or make a turn, which could affect your driving path.
+ 
+ 3. **Pedestrian on the sidewalk**: There is a pedestrian walking on the sidewalk to the right of your lane. It is important to be aware of pedestrians, especially in urban areas, as they may unexpectedly cross the road or enter the traffic lanes.
+ 
+ Please note that these are just a few examples of the road users you should be aware of, and the actual driving scene may contain other vehicles, cyclists, or road users that you should also pay attention to.","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bicycle', 'vehicle.car']",4,4,4,4,4,4,4,3,3,"- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (vehicles and pedestrians) and mentions their actions, but does not emphasize them strongly.
+- Overall quality: The description is clear and provides a concise overview of the scene, but is somewhat generic and lacks specific details.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on present safety-relevant actors (vehicles and pedestrians) and mentions their actions, but does not emphasize them strongly.
+- Overall quality: The description is clear and provides a concise overview of the scene, but is somewhat generic and lacks specific details.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 3"
+scene-1094,12,scene-1094_sample_12.json,"Based on the image provided, here is a concise description of the driving scene:
+ 
+ - The car is on a two-lane road.
+ - There is a vehicle in the lane to the right of the car, which appears to be following the same direction.
+ - The car is approaching an intersection with a traffic light. The traffic light is not visible in the image.
+ - The lane markings are clear and visible.
+ - There are no pedestrians visible in the image.
+ - The road is well-lit, suggesting it is either daytime or the streetlights are on.
+ - The car is moving forward, and there are no immediate signs of other vehicles or pedestrians that would require a change in speed or direction.
+ 
+ Please note that this description is based on the available information and the assumption that the car is following standard traffic rules.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian on the sidewalk**: The pedestrian is located on the left side of the image, near the edge of the sidewalk. It is important to be aware of pedestrians, especially when making turns or stopping at intersections. The pedestrian might be crossing the street or walking along the sidewalk, so it's crucial to maintain a safe distance and be prepared to yield if necessary.
+ 
+ 2. **Cyclist on the right side of the road**: The cyclist is on the right side of the road, slightly ahead of the vehicle. Cyclists are often smaller and less visible than other vehicles, so it's important to keep an eye out for them, especially when changing lanes or making turns.
+ 
+ 3. **Other vehicles on the road**: There are other vehicles visible in the image, including cars in the distance. It's important to be aware of their positions and movements to anticipate potential changes in traffic flow or to react to any sudden maneuvers they might make.
+ 
+ Remember, as an autonomous vehicle, your primary goal is to ensure the safety of all road users, including pedestrians, cyclists, and other vehicles. This includes maintaining a safe distance, obeying traffic rules, and being prepared to react to any unexpected situations.","['human.pedestrian.adult', 'human.pedestrian.personal_mobility', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,3,4,2,4,4,2,4,4,"- Hallucinations: The pedestrian on the sidewalk, cyclist on the right side of the road, and other vehicles on the road are not supported by the ground-truth annotations.
+- Safety relevance: The description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The pedestrian on the sidewalk, cyclist on the right side of the road, and other vehicles on the road are not supported by the ground-truth annotations.
+- Safety relevance: The description focuses on pedestrians and vehicles, which are present in the ground-truth annotations.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-1094,16,scene-1094_sample_16.json,"In the image, the car is driving on a two-way street at night. The street is illuminated by streetlights and the headlights of the car. There are no visible traffic lights in the image. Other cars are present in the scene, with one car ahead of the car in the image and another car following behind. There are no pedestrians visible in the image. The lane markings are clear and the car is within its lane. The road appears to be clear and the car is moving in the correct direction, following the flow of traffic.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: There is a pedestrian on the left side of the image, near the edge of the sidewalk. It is important to be aware of pedestrians as they may cross the street unexpectedly, and you must yield to them.
+ 
+ 2. Bicyclist: There is a bicyclist on the right side of the image, slightly ahead of the car. Bicyclists are important to be aware of because they share the road and may be less visible than other vehicles.
+ 
+ 3. Vehicle: There is another vehicle visible in the image, ahead of the car and to the right. This vehicle is important to be aware of because it is part of the traffic flow and you need to maintain a safe following distance.
+ 
+ These road users are important to be aware of because they are part of the traffic environment and their actions can affect the safety of the vehicle you are driving.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",2,3,3,2,4,4,2,2,3,"- Hallucinations: The VLM object description mentions a pedestrian on the left side of the image, which is not supported by the ground-truth annotations. Additionally, it mentions a bicyclist on the right side of the image, which is also not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the vehicle ahead of the car and to the right, which is present in the ground-truth annotations. However, it does not mention the pedestrian or the vehicle bus, which are also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of other cars and the road conditions.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 3","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions a pedestrian on the left side of the image, which is not supported by the ground-truth annotations. Additionally, it mentions a bicyclist on the right side of the image, which is also not supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the vehicle ahead of the car and to the right, which is present in the ground-truth annotations. However, it does not mention the pedestrian or the vehicle bus, which are also present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and provides a good overview of the scene, including the presence of other cars and the road conditions.
+
+Hallucinations: 2
+Safety relevance: 2
+Overall quality: 3"
+scene-1100,0,scene-1100_sample_0.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ 1. The car is at an intersection with a traffic light.
+ 2. The traffic light is currently green, indicating that the car has the right of way.
+ 3. There are other cars in the vicinity, some of which are moving and others appear to be stationary.
+ 4. The lane markings are visible, and the car is positioned in the correct lane for the direction it is traveling.
+ 5. There are no pedestrians visible in the immediate vicinity of the car.
+ 
+ Please note that this description is based on the available information and the assumption that the car is following standard traffic rules.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: There is a pedestrian visible on the right side of the image, near the edge of the sidewalk. It is important to be aware of pedestrians as they may cross the street unexpectedly or walk along the road.
+ 
+ 2. Vehicle: There is a vehicle visible on the left side of the image, just ahead of the vehicle from which the image is taken. This vehicle is important to be aware of as it is in the vehicle's path and could potentially be a hazard if it changes lanes or makes a sudden stop.
+ 
+ 3. Traffic Light: There is a traffic light visible in the image, located on the right side. It is important to be aware of traffic lights as they control the flow of traffic and indicate when it is safe to proceed or when it is necessary to stop.
+ 
+ These road users are important to be aware of because they can impact the vehicle's trajectory and require the vehicle to adjust its speed or direction accordingly to ensure safe driving.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,4,4,4,4,2,4,4,"- Hallucinations: The VLM scene description does not mention hallucinated objects, but the VLM object description mentions a pedestrian on the right side of the image, which is not supported by the ground-truth annotations. The VLM object description also mentions a vehicle on the left side of the image, which is supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on present safety-critical actors from GT, mentioning the vehicle and the pedestrian.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the driving scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM scene description does not mention hallucinated objects, but the VLM object description mentions a pedestrian on the right side of the image, which is not supported by the ground-truth annotations. The VLM object description also mentions a vehicle on the left side of the image, which is supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on present safety-critical actors from GT, mentioning the vehicle and the pedestrian.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the driving scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-1100,4,scene-1100_sample_4.json,"In the image, the car is at an intersection with a green traffic light, indicating it is safe to proceed. There are no other cars or pedestrians visible in the immediate vicinity, and the lane markings are clear, suggesting a well-maintained road. The car is positioned in the correct lane for its direction of travel. The environment appears to be urban, with buildings and streetlights visible in the background. The road is well-lit, and there are no visible obstacles or hazards.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the right side of the image, near the sidewalk. It appears to be walking along the sidewalk, which is important for me to be aware of because pedestrians have the right of way and I must yield to them when necessary.
+ 
+ 2. Bus: The bus is located on the left side of the image, behind the car. It is important to be aware of the bus because it is a larger vehicle that may have blind spots, and it might make frequent stops to pick up and drop off passengers. I need to maintain a safe distance and be prepared for any sudden stops or changes in direction.
+ 
+ 3. Traffic light: The traffic light is located on the right side of the image, just ahead of the car. It is important to pay attention to the traffic light signals to ensure that I am obeying traffic rules and to anticipate any changes in the traffic flow.
+ 
+ These road users are important to me because they are part of the traffic environment that I must navigate safely. By being aware of their presence and actions, I can make informed decisions about my driving behavior to ensure the safety of all road users.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,3,4,4,4,4,3,4,"- Hallucinations: None
+- Safety relevance: The description focuses on the bus and pedestrian, which are present in the ground-truth annotations. However, it does not mention the car, which is also present.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: None
+- Safety relevance: The description focuses on the bus and pedestrian, which are present in the ground-truth annotations. However, it does not mention the car, which is also present.
+- Overall quality: The description is clear and provides a good overview of the scene.
+
+Hallucinations: 4
+Safety relevance: 3
+Overall quality: 4"
+scene-1100,8,scene-1100_sample_8.json,"In the image, the car is at an intersection with a green traffic light. The vehicle is positioned in the right lane of the road, which is marked with a white line. There are no other cars or pedestrians visible in the immediate vicinity, and the road appears to be clear. The car is stationary, waiting for the green light to proceed. The surrounding environment suggests an urban setting with buildings and streetlights visible in the background.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. **Pedestrian on the sidewalk**: The pedestrian is located on the right side of the image, near the crosswalk. It is important to be aware of pedestrians, especially when approaching a crosswalk, as they may be crossing the street.
+ 
+ 2. **Traffic lights**: There are two traffic lights visible in the image. One is located on the left side of the image, and the other is on the right side. Traffic lights control the flow of traffic and ensure safety at intersections. It is crucial to obey traffic signals to avoid accidents and maintain smooth traffic flow.
+ 
+ 3. **Other vehicles**: There are several other vehicles in the image, including cars and a bus. These vehicles are located in various parts of the image, indicating that the road is busy. It is important to be aware of other vehicles to maintain a safe distance, anticipate their movements, and react accordingly to avoid collisions.
+ 
+ 4. **Street signs**: There are street signs visible in the image, including one that appears to be a directional sign. These signs provide important information about road conditions, directions, and regulations. It is important to be aware of street signs to ensure compliance with traffic laws and to navigate the road safely.
+ 
+ 5. **Parked vehicles**: There are a few parked vehicles on the side of the road. These vehicles may obstruct the view of oncoming traffic or pedestrians, so it is important to be cautious when approaching them.
+ 
+ 6. **Traffic cones**: There are traffic cones visible in the image, likely indicating a temporary change in the road layout or a construction zone. It is important to be aware of these cones to avoid accidents and to follow any instructions provided by the traffic cones.
+ 
+ 7. **Other pedestrians**: There are other pedestrians visible in the image, some of whom are carrying items like handbags. It is important to be aware of other pedestrians, especially when approaching a crosswalk or a crowded area, to ensure their safety and to maintain smooth traffic flow.
+ 
+ 8. **Streetlights**: There are streetlights visible in the image, which provide illumination during nighttime or low-light conditions. It is important to be aware of streetlights to ensure proper visibility and to comply with traffic regulations that may require headlights to be on or off.
+ 
+ 9. **Traffic signals**: There are traffic signals visible in the image, which control the flow of traffic and ensure safety at intersections. It is crucial to obey traffic signals to avoid accidents and to maintain smooth traffic flow.
+ 
+ 10. **Other vehicles**: There are several other vehicles in the image, including cars and a bus. These vehicles are located in various parts of the image, indicating that the road is busy. It is important to be aware of other vehicles to maintain a safe distance, anticipate their movements, and react accordingly to avoid collisions.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,3,1,4,4,2,4,4,"- Hallucinations: The VLM object description mentions traffic cones, street signs, and streetlights, which are not present in the ground-truth annotations. Additionally, it mentions other pedestrians, other vehicles, and traffic signals, which are present in the ground-truth annotations but not explicitly mentioned in the VLM scene description.
+- Safety relevance: The VLM object description focuses on present safety-relevant actors from GT, including pedestrians and vehicles.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The VLM object description mentions traffic cones, street signs, and streetlights, which are not present in the ground-truth annotations. Additionally, it mentions other pedestrians, other vehicles, and traffic signals, which are present in the ground-truth annotations but not explicitly mentioned in the VLM scene description.
+- Safety relevance: The VLM object description focuses on present safety-relevant actors from GT, including pedestrians and vehicles.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 2
+Safety relevance: 4
+Overall quality: 4"
+scene-1100,12,scene-1100_sample_12.json,"Based on the image provided, here's a concise description of the driving scene:
+ 
+ - The car is at an intersection with a green traffic light, indicating it has the right of way.
+ - There are no other cars or pedestrians visible in the immediate vicinity, suggesting a clear path forward.
+ - The lane markings are visible, and the car is positioned within its lane.
+ - There is a blue sign on the side of the road, but the content of the sign is not clear from this angle.
+ - The environment suggests an urban setting with buildings and streetlights in the background.
+ 
+ Given the green light and the absence of other vehicles or pedestrians, the autonomous driving system should proceed with caution, following the lane markings and being prepared to yield to any pedestrians or vehicles that may appear from the sides or behind.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Pedestrian: The pedestrian is located on the right side of the image, near the sidewalk. They appear to be walking along the sidewalk, which is important for me to be aware of because pedestrians have the right of way in many jurisdictions, and I need to ensure that I yield to them when required.
+ 
+ 2. Vehicle: There is a vehicle on the right side of the image, which is important for me to be aware of because it is a potential obstacle or hazard. I need to maintain a safe distance from this vehicle and be prepared to react to its actions, such as turning or changing lanes.
+ 
+ 3. Traffic light: There is a traffic light visible in the image, which is important for me to be aware of because it regulates the flow of traffic and I need to obey its signals to ensure safe navigation through the intersection.
+ 
+ These road users are important for me to be aware of because they are part of the dynamic environment that I am navigating. By being aware of their presence and actions, I can make informed decisions about how to safely and efficiently drive the vehicle.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,4,4,4,4,3,4,4,"- Hallucinations: The blue sign on the side of the road is not explicitly supported by the ground-truth annotations, but it is not a major hallucination as it is not explicitly claimed to be a specific object category.
+- Safety relevance: The VLM object description focuses on the pedestrian and vehicle, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The blue sign on the side of the road is not explicitly supported by the ground-truth annotations, but it is not a major hallucination as it is not explicitly claimed to be a specific object category.
+- Safety relevance: The VLM object description focuses on the pedestrian and vehicle, which are present in the ground-truth annotations.
+- Overall quality: The VLM scene description is clear and informative, providing a concise overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 4
+Overall quality: 4"
+scene-1100,16,scene-1100_sample_16.json,"The image shows a nighttime scene at an intersection. The car is stopped at a red traffic light, as indicated by the illuminated red light on the traffic signal visible in the image. There is a pedestrian crossing signal showing a green light, indicating it is safe for pedestrians to cross. The lane markings are clearly visible, and there is a blue sign with white text on the right side of the road, but the text is not legible in the image. There are no other cars or pedestrians visible in the immediate vicinity of the car. The road appears to be relatively clear, and the car is stationary, waiting for the traffic light to change.","As an autonomous driving labeller, I would pay attention to the following road users in the driving scene:
+ 
+ 1. Motorcycle (0.25 seconds into the image): The motorcycle is located on the left side of the road, just ahead of the vehicle. It is important to be aware of the motorcycle's position because it could make sudden maneuvers or change lanes, which could pose a risk if not detected and reacted to in time.
+ 
+ 2. Pedestrian (0.45 seconds into the image): The pedestrian is located on the right side of the road, near the sidewalk. It is important to be aware of pedestrians because they may cross the road unexpectedly, and their presence could impact the vehicle's speed and trajectory.
+ 
+ 3. Traffic light (0.55 seconds into the image): The traffic light is located on the right side of the road, just ahead of the vehicle. It is important to be aware of the traffic light's signal because it regulates the flow of traffic and ensures safety at intersections.
+ 
+ These road users are important to be aware of because they can have a significant impact on the vehicle's safety and the overall traffic flow. The autonomous driving system should be programmed to detect and respond to these road users appropriately to ensure safe and efficient driving.","['human.pedestrian.adult', 'vehicle.bus.rigid', 'vehicle.car', 'vehicle.motorcycle']",3,4,3,4,4,4,3,2,4,"- Hallucinations: The motorcycle's potential to make sudden maneuvers or change lanes, the pedestrian's potential to cross the road unexpectedly, and the traffic light's importance in regulating traffic flow are all minor hallucinations, as they are not explicitly supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the present safety-relevant actors, including the pedestrian and the traffic light, but does not mention the vehicle.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 2
+Overall quality: 4","Feedback:::
+Evidence:
+- Hallucinations: The motorcycle's potential to make sudden maneuvers or change lanes, the pedestrian's potential to cross the road unexpectedly, and the traffic light's importance in regulating traffic flow are all minor hallucinations, as they are not explicitly supported by the ground-truth annotations.
+- Safety relevance: The VLM object description focuses on the present safety-relevant actors, including the pedestrian and the traffic light, but does not mention the vehicle.
+- Overall quality: The VLM scene description is clear and informative, providing a good overview of the scene.
+
+Hallucinations: 3
+Safety relevance: 2
+Overall quality: 4"

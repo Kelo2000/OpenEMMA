@@ -25,4 +25,3 @@ qwen_results/
 *.out
 *.sbatch
 .env
-/data
