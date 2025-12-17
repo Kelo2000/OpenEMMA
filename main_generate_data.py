@@ -371,8 +371,9 @@ if __name__ == '__main__':
         name = scene['name']
         description = scene['description']
 
-        # if not name in ["scene-0103", "scene-1077"]:
-        #     continue
+        if not name in ["scene-0553"]:
+            # print("skipping!!!!!")
+            continue
 
         # Get all image and pose in this scene
         front_camera_images = []
